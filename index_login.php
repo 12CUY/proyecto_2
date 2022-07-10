@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../proyecto_2/estilos_vista_css/index_login.css">
+    <link rel="stylesheet" href="./estilos_vista_css/index_login.css">
 
      
     <title>login</title>
@@ -17,7 +17,7 @@
     <!--bostrap-->
         <div class="container">
             <div class="user signinBx">
-                <div class="imgBx"><img src="../proyecto_2/imagenes/foto_1.jpg" /></div>
+                <div class="imgBx"><img src="./imagenes/foto_1.jpg" /></div>
                 <div class="formBx">
                     <form>
                         <h2>INICIAR SESION</h2>
@@ -46,7 +46,7 @@
                         </p>
                     </form>
                 </div>
-                <div class="imgBx"><img src="../proyecto_2/imagenes/foto_2.jpg" /></div>
+                <div class="imgBx"><img src="./imagenes/foto_2.jpg" /></div>
             </div>
         </div>
     </section>
