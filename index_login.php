@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos_vista_css/index_login.css">
 
-     
+    
     <title>login</title>
 </head>
 
@@ -21,10 +19,10 @@
             <div class="user signinBx">
                 <div class="imgBx"><img src="./imagenes/foto_1.jpg" /></div>
                 <div class="formBx">
-                    <form action="vistas/vista_1.php" method="POST">
+                    <form>
                         <h2>INICIAR SESION</h2>
-                        <input type="text" name="usuario" id="usuario" placeholder="Usuario." />
-                        <input type="password" name="" id=""  placeholder="Contraseña." />
+                        <input type="text" placeholder="Usuario." />
+                        <input type="password" placeholder="Contraseña." />
                         <input type="submit" value="Ingresar" />
                         <p class="signup">
                             ¿No tienes una cuenta?
@@ -33,9 +31,6 @@
                     </form>
                 </div>
             </div>
-
-                <!--formulario -register-->
-
             <div class="user signupBx">
                 <div class="formBx">
                     <form>
@@ -51,7 +46,7 @@
                         </p>
                     </form>
                 </div>
-                <div class="imgBx"><img src="./imagenes/foto_2.jpg" /></div>
+                <div class="imgBx"><img src="./imagenes/imagen_4.jpg" /></div>
             </div>
         </div>
     </section>

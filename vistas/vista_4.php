@@ -32,14 +32,18 @@
         <article>
             <h1>Seguridad - informacion</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quam quibusdam nihil similique et voluptates accusamus debitis quia facilis repellendus?</p>
+            <p>Consiste en una red de seguridad encargada de proteger a las personas y bienes, esta aplicación se basa 
+                en dos pilares que son la prevención y la detección para la acción.  </p>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, unde alias architecto cupiditate, facilis nisi, incidunt fugiat soluta rerum voluptate, mollitia natus praesentium sunt repellat quidem? Consequatur, nihil. Dolore fuga officiis, similique animi, asperiores quia aspernatur eius. Provident, ipsam, dolores.</p>
+            <p>Como la domótica tiene pleno conocimiento del estado de las puertas, ventanas y sensores dentro y fuera de 
+                la vivienda, puede, de forma muy sencilla y eficaz, hacerse con el control de esa información y poder, a 
+                través de la programación instalada, proteger la toda la casa.</p>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptate dolorum! Eius optio, tempore temporibus, totam qui illum nihil. Earum, rerum quae magni aliquid optio repellat, rem assumenda eius accusantium facilis nam accusamus aperiam at dolorum iure nihil dicta aut modi doloribus excepturi cumque odio! Molestias at dolor ab consectetur.</p>
+            <p>Esta es también una de las aplicaciones más importantes de la domótica, ya que la figura de la persona que lleva 
+                la responsabilidad global del hogar a lo largo del día es cada vez menos frecuente en las familias actuales; en 
+                su lugar están los elementos que nos permiten saber qué está pasando, ya sea local o remotamente.</p>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto excepturi enim reprehenderit expedita, mollitia animi autem sed reiciendis laudantium culpa natus ea blanditiis ullam molestias itaque laboriosam sunt quidem.</p>
-        </article>
+                    </article>
     </main>
     <a href="../vistas/codigo_QR_5.php" class="btn-neon">
         <span id="span1"></span>

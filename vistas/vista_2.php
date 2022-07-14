@@ -35,13 +35,18 @@ include('../templates/menu.php');
         <article>
             <h1>Confort - informacion</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quam quibusdam nihil similique et voluptates accusamus debitis quia facilis repellendus?</p>
+            <p>Cuando tu hogar se adapta a tus necesidades, mejora tu calidad de vida. La domótica juega un papel muy 
+                importante en este punto ya que tiene el control de todo el inmueble, dicho control se utiliza fundamentalmente 
+                para, por un lado, hacer que las tareas repetitivas y rutinarias se realicen de forma automática, y por otro, 
+                programar escenas para que el inmueble se adapte a las necesidades. necesidades de cada persona.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, unde alias architecto cupiditate, facilis nisi, incidunt fugiat soluta rerum voluptate, mollitia natus praesentium sunt repellat quidem? Consequatur, nihil. Dolore fuga officiis, similique animi, asperiores quia aspernatur eius. Provident, ipsam, dolores.</p>
+            <p>El confort no es poder encender o apagar luces, ni subir y bajar persianas, sino poder hacerlo en cualquier 
+                momento y desde cualquier lugar, dentro o fuera de la casa, de forma sencilla y armoniosa, y si es posible 
+                de forma automática. sin perder en ningún momento el control manual.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptate dolorum! Eius optio, tempore temporibus, totam qui illum nihil. Earum, rerum quae magni aliquid optio repellat, rem assumenda eius accusantium facilis nam accusamus aperiam at dolorum iure nihil dicta aut modi doloribus excepturi cumque odio! Molestias at dolor ab consectetur.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto excepturi enim reprehenderit expedita, mollitia animi autem sed reiciendis laudantium culpa natus ea blanditiis ullam molestias itaque laboriosam sunt quidem.</p>
+            <p>El confort desde el punto de vista de la domótica es básicamente el control de dispositivos que se divide, 
+                por citar algunos ejemplos, en: control de iluminación, control de clima, control de apertura, control de riego, 
+                control multimedia, generación de escenas.</p>
         </article>
     </main>
     <a href="../vistas/vista_3.php" class="btn-neon">
@@ -51,6 +56,7 @@ include('../templates/menu.php');
         <span id="span4"></span>
         SIGUIENTE
     </a>
+    
 </body>
 
 </html>

@@ -30,15 +30,22 @@
     
     <main>
         <article>
-            <h1>Casa - informacion</h1>
+            <h1>Casa - información</h1>
             <hr>
-            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quam quibusdam nihil similique et voluptates accusamus debitis quia facilis repellendus?</p>
+            <p>El sistema nos permite gestionar dispositivos para el ahorro energético y eficiencia energética, 
+                la domótica juega un papel muy importante ya que se cuenta con la inteligencia suficiente para llevar 
+                a muchas acciones, una de ellas es la gestión de la energía lo cual nos ayuda a que nuestro consumo de 
+                energía pueda ser aprovechada al máximo evitando el desperdicio de la misma.</p>
             
-            <p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, unde alias architecto cupiditate, facilis nisi, incidunt fugiat soluta rerum voluptate, mollitia natus praesentium sunt repellat quidem? Consequatur, nihil. Dolore fuga officiis, similique animi, asperiores quia aspernatur eius. Provident, ipsam, dolores.</p>
+            <p>Ahorro de energía: esta subcategoría incluye todas las aplicaciones que buscan reducir el consumo evitando 
+                el desperdicio de energía, por ejemplo, notificación de puertas o ventanas abiertas cuando la calefacción 
+                está encendida.</p>
             
-            <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptate dolorum! Eius optio, tempore temporibus, totam qui illum nihil. Earum, rerum quae magni aliquid optio repellat, rem assumenda eius accusantium facilis nam accusamus aperiam at dolorum iure nihil dicta aut modi doloribus excepturi cumque odio! Molestias at dolor ab consectetur.</p>
-            
-            <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto excepturi enim reprehenderit expedita, mollitia animi autem sed reiciendis laudantium culpa natus ea blanditiis ullam molestias itaque laboriosam sunt quidem.</p>
+            <p>Eficiencia energética: Esta subcategoría incluye aplicaciones que no reducen el consumo de energía, pero 
+                logran aprovecharlo al máximo, por ejemplo, con un sistema de corrección del factor de potencia, evitamos 
+                la aparición de potencias reactivas que sobrecargan las líneas que no se utilizan para cualquier propósito.</p>
+                <p>
+</p>
         </article>
 
         <a href="../vistas/vista_2.php" class="btn-neon">
@@ -48,6 +55,9 @@
         <span id="span4"></span>
         SIGUIENTE
     </a>
+    <p>
+</p>
     </main>
+    
 </body>
 </html>
