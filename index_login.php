@@ -1,28 +1,25 @@
+
 <?php
-   require '../proyecto_2/configuraciones/base_datos.php';
-    $message = '';
+
+require '../proyecto_2/configuraciones/base_datos.php';
+
+$message = '';
    //connect database.php
-   if (!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['email'])){
 
-    $sql= "INSERT INTO users (username, password, email) VALUES (:username, :password, :email)";
-    $stmt= $conn ->prepare($sql);
+if (!empty($_POST['email']) && !empty($_POST['password'])) {
+  $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+  $stmt = $conn->prepare($sql);
+  $stmt->bindParam(':email', $_POST['email']);
+  $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+  $stmt->bindParam(':password', $password);
 
-    $stmt->bindParam(':email', $_POST['email']);
-
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-
-    $stmt->bindParam(':password', $password);
-    if($stmt->execute()){
-        $message ='successfully create new user';
-    }else {
-        $message = 'sorry there must have ';
-        }
-
-   }
-
+  if ($stmt->execute()) {
+    $message = 'Successfully created new user';
+  } else {
+    $message = 'Sorry there must have been an issue creating your account';
+  }
+}
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,10 +34,10 @@
 </head>
 
 <body>
-<?php
-if(!empty($message)): ?>
-<p><?= $message ?></p>
-<?php endif ;?>
+
+<?php if(!empty($message)): ?>
+      <p> <?= $message ?></p>
+    <?php endif; ?>
 
 
 <section>
@@ -52,14 +49,14 @@ if(!empty($message)): ?>
                 <div class="formBx">
 
                 <!--base de datos mysql-->
-                    <form>
+                    <form action="../proyecto_2/vistas/vista_1.php" method="POST">
                         <h2>INICIAR SESION</h2>
                         <input type="text" name="usernmame" placeholder="Ingresa tu usuario" />
                         <input type="password" name="password" placeholder="Ingresa tu contraseña" />
                         <input type="submit" value="Ingresar" />
                         <p class="signup">
                             ¿No tienes una cuenta?
-                            <a href="../proyecto_2/vistas/vista_1.php" onclick="toggleForm();"> Registrate.</a>
+                            <a href="#" onclick="toggleForm();"> Registrate.</a>
                         </p>
                     </form>
                 </div>
@@ -71,7 +68,7 @@ if(!empty($message)): ?>
         
                         <form action="../proyecto_2/index_login.php" method="POST">
                         <h2>CREAR CUENTA</h2>
-                        <input type="text" name="username" placeholder="Nombre del Usuario">
+                        <input type="text" name="user_name" placeholder="Nombre del Usuario">
                         <input type="text" name="email" placeholder="Correo Electronico">
                         <input type="password" name="password" placeholder="Contraseña">
                         <input type="password" name="confirm_password" placeholder="Confirmar contraseña">
