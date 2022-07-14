@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../estilos_vista_css//menu.css">
   <title>MENU</title>
-  <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b00314f003.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
@@ -22,7 +22,7 @@
   <div class="menu__side" id="menu_side">
 
     <div class="name__page">
-      <i class="fab fa-youtube"></i>
+      <i class="fab fa-asymmetrik"></i>
       <h4>JMW</h4>
     </div>
 
@@ -30,43 +30,43 @@
 
       <a href="vista_1.php" class="selected">
         <div class="option">
-          <i class="fas fa-home" title="Inicio"></i>
-          <h4>Inicio</h4>
+          <i class="fas fa-home" title="casa"></i>
+          <h4>Casa</h4>
         </div>
       </a>
 
       <a href="vista_2.php">
         <div class="option">
-          <i class="far fa-file" title="Portafolio"></i>
-          <h4>vista</h4>
+          <i class="fab fa-confluence" title="confort"></i>
+          <h4>Confort</h4>
         </div>
       </a>
 
       <a href="vista_3.php">
         <div class="option">
-          <i class="fas fa-video" title="Cursos"></i>
-          <h4>sistema de prueba</h4>
+          <i class="fas fa-eye" title="visual"></i>
+          <h4>Visual</h4>
+        </div>
+      </a>
+
+      <a href="vista_4.php">
+        <div class="option">
+          <i class="fas fa-door-closed" title="seguridad"></i>
+          <h4>Seguridad</h4>
         </div>
       </a>
 
       <a href="#">
         <div class="option">
-          <i class="far fa-sticky-note" title="Blog"></i>
-          <h4>blog direcional</h4>
+          <i class="far fa-id-badge" title="sistema"></i>
+          <h4>Sistema - QR</h4>
         </div>
       </a>
 
       <a href="#">
         <div class="option">
-          <i class="far fa-id-badge" title="Contacto"></i>
-          <h4>Contacto - id numero</h4>
-        </div>
-      </a>
-
-      <a href="#">
-        <div class="option">
-          <i class="far fa-address-card" title="Nosotros"></i>
-          <h4>ubicacion</h4>
+          <i class="far fa-address-card" title="sistema"></i>
+          <h4>ON / Off</h4>
         </div>
       </a>
 
