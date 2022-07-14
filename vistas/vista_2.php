@@ -35,6 +35,7 @@ include('../templates/menu.php');
         <article>
             <h1>Confort - informacion</h1>
             <hr>
+            <br><br>
             <p>Cuando tu hogar se adapta a tus necesidades, mejora tu calidad de vida. La domótica juega un papel muy 
                 importante en este punto ya que tiene el control de todo el inmueble, dicho control se utiliza fundamentalmente 
                 para, por un lado, hacer que las tareas repetitivas y rutinarias se realicen de forma automática, y por otro, 
@@ -47,8 +48,10 @@ include('../templates/menu.php');
             <p>El confort desde el punto de vista de la domótica es básicamente el control de dispositivos que se divide, 
                 por citar algunos ejemplos, en: control de iluminación, control de clima, control de apertura, control de riego, 
                 control multimedia, generación de escenas.</p>
+                <br><br>
+
+
         </article>
-    </main>
     <a href="../vistas/vista_3.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
@@ -57,6 +60,9 @@ include('../templates/menu.php');
         SIGUIENTE
     </a>
     
+
+    </main>
+
 </body>
 
 </html>
