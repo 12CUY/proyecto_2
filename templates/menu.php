@@ -69,7 +69,12 @@
           <h4>ON / Off</h4>
         </div>
       </a>
-
+      <a href="../index_login.php">
+        <div class="option">
+          <i class="fas fa-caret-square-left" title="sistema"></i>
+          <h4>Cerrar sesion</h4>
+        </div>
+      </a>
     </div>
 
   </div>
