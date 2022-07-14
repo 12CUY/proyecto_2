@@ -32,13 +32,13 @@
         <article>
             <h1>Casa - informacion</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quam quibusdam nihil similique et voluptates accusamus debitis quia facilis repellendus?</p>
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quam quibusdam nihil similique et voluptates accusamus debitis quia facilis repellendus?</p>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, unde alias architecto cupiditate, facilis nisi, incidunt fugiat soluta rerum voluptate, mollitia natus praesentium sunt repellat quidem? Consequatur, nihil. Dolore fuga officiis, similique animi, asperiores quia aspernatur eius. Provident, ipsam, dolores.</p>
+            <p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, unde alias architecto cupiditate, facilis nisi, incidunt fugiat soluta rerum voluptate, mollitia natus praesentium sunt repellat quidem? Consequatur, nihil. Dolore fuga officiis, similique animi, asperiores quia aspernatur eius. Provident, ipsam, dolores.</p>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptate dolorum! Eius optio, tempore temporibus, totam qui illum nihil. Earum, rerum quae magni aliquid optio repellat, rem assumenda eius accusantium facilis nam accusamus aperiam at dolorum iure nihil dicta aut modi doloribus excepturi cumque odio! Molestias at dolor ab consectetur.</p>
+            <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptate dolorum! Eius optio, tempore temporibus, totam qui illum nihil. Earum, rerum quae magni aliquid optio repellat, rem assumenda eius accusantium facilis nam accusamus aperiam at dolorum iure nihil dicta aut modi doloribus excepturi cumque odio! Molestias at dolor ab consectetur.</p>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto excepturi enim reprehenderit expedita, mollitia animi autem sed reiciendis laudantium culpa natus ea blanditiis ullam molestias itaque laboriosam sunt quidem.</p>
+            <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto excepturi enim reprehenderit expedita, mollitia animi autem sed reiciendis laudantium culpa natus ea blanditiis ullam molestias itaque laboriosam sunt quidem.</p>
         </article>
 
         <a href="../vistas/vista_2.php" class="btn-neon">
