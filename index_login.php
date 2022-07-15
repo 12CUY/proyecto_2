@@ -6,20 +6,26 @@ require '../proyecto_2/configuraciones/base_datos.php';
 $message = '';
    //connect database.php
 
-if (!empty($_POST['email']) && !empty($_POST['password'])) {
-  $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user_name'])) {
+  $sql = "INSERT INTO users (email, password, user_name) VALUES (:email, :password, :user_name )";
   $stmt = $conn->prepare($sql);
+  //registro 
   $stmt->bindParam(':email', $_POST['email']);
+  $stmt->bindParam(':user_name', $_POST['user_name']);
+  
+ // $stmt->bindParam(':confirm_password', $_POST['confirm_password']);
+
   $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
   $stmt->bindParam(':password', $password);
 
   if ($stmt->execute()) {
-    $message = 'Successfully created new user';
+    $message = 'se creo la cuenta';
   } else {
-    $message = 'Sorry there must have been an issue creating your account';
+    $message = 'perdon no se creo la cuenta';
   }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,7 +78,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
                         <input type="text" name="user_name" placeholder="Nombre del Usuario">
                         <input type="text" name="email" placeholder="Correo Electronico">
                         <input type="password" name="password" placeholder="Contraseña">
-                        <input type="password" name="confirm_password" placeholder="Confirmar contraseña">
+                        <!--<input type="password" name="confirm_password" placeholder="Confirmar contraseña"> -->
                         <input type="submit" value="Registrate">
                         <p class="signup">
                             ¿Ya tienes una cuenta?
