@@ -1,23 +1,18 @@
 
-<?php
-
-require '../proyecto_2/configuraciones/base_datos.php';
-
+     <!----------------------------------------- registro - formulario ---------------------------------->
+     <?php
+require '../proyecto_2/configuraciones/database.php';
 $message = '';
    //connect database.php
-
 if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user_name'])) {
   $sql = "INSERT INTO users (email, password, user_name) VALUES (:email, :password, :user_name )";
   $stmt = $conn->prepare($sql);
   //registro 
   $stmt->bindParam(':email', $_POST['email']);
   $stmt->bindParam(':user_name', $_POST['user_name']);
-  
  // $stmt->bindParam(':confirm_password', $_POST['confirm_password']);
-
   $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
   $stmt->bindParam(':password', $password);
-
   if ($stmt->execute()) {
     $message = 'se creo la cuenta';
   } else {
@@ -25,6 +20,68 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
   }
 }
 ?>
+     <!----------------------------------------- registro - formulario ---------------------------------->
+
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+
+     <!----------------------------------------- iniciar session ----------------------------------
+
+?php
+
+  session_start();
+
+  if (isset($_SESSION['user_id'])) {
+    header('Location: /php-login');
+  }
+  require '../proyecto_2/configuraciones/database.php';
+
+  if (!empty($_POST['email']) && !empty($_POST['password'])) {
+    $records = $conn->prepare('SELECT id, email, password FROM users WHERE email = :email');
+    $records->bindParam(':email', $_POST['email']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $message = '';
+
+    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+      $_SESSION['user_id'] = $results['id'];
+      header("Location: /php-login");
+    } else {
+      $message = 'Sorry, those credentials do not match';
+    }
+  }
+
+?>
+     ----------------------------------------- iniciar session ---------------------------------->
+
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+
+     <!-----------------------------------------vista 1---------------------------------->
+
+<?php
+  session_start();
+
+  require '../proyecto_2/configuraciones/database.php';
+
+  if (isset($_SESSION['user_id'])) {
+    $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
+    $records->bindParam(':id', $_SESSION['user_id']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $user = null;
+
+    if (count($results) > 0) {
+      $user = $results;
+    }
+  }
+?>
+     <!-----------------------------------------vista 1---------------------------------->
+
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+
+     <!--------------------------------------------------------------------------->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,6 +104,7 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
     <?php endif; ?>
 
 
+
 <section>
 
     <!--bostrap-->
@@ -58,7 +116,7 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
                 <!--base de datos mysql-->
                     <form action="../proyecto_2/vistas/vista_1.php" method="POST">
                         <h2>INICIAR SESION</h2>
-                        <input type="text" name="usernmame" placeholder="Ingresa tu usuario" />
+                        <input type="text" name="email" placeholder="Correo electronico" />
                         <input type="password" name="password" placeholder="Ingresa tu contraseña" />
                         <input type="submit" value="Ingresar" />
                         <p class="signup">
@@ -72,7 +130,7 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
                 <div class="formBx">
                                     <!--base de datos mysql-->
 
-        
+                                            <!---->
                         <form action="../proyecto_2/index_login.php" method="POST">
                         <h2>CREAR CUENTA</h2>
                         <input type="text" name="user_name" placeholder="Nombre del Usuario">
