@@ -24,11 +24,11 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
 
 <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
 
-     <!----------------------------------------- iniciar session ----------------------------------
 
+<!----------------------------------------- iniciar session ---------------------------------->
 <?php
  // session_set_cookie_params(60*60*24*10); // 14 expediccion
-  session_start();
+
 
   if (isset($_SESSION['user_id'])) {
     header('Location: ../proyecto_2/index_login.php');
@@ -47,12 +47,12 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
       $_SESSION['user_id'] = $results['id'];
       header('Location: ../proyecto_2/index_login.php');
     } else {
-      $message = 'Sorry, those credentials do not match';
+      $message = 'credenciales incorrectas';
     }
   }
 
 ?>
-     ----------------------------------------- iniciar session ---------------------------------->
+     <!----------------------------------------- iniciar session ---------------------------------->
 
 <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
 
@@ -60,11 +60,9 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
 
 <?php
 
-  public function __construct(){
-   //session_set_cookie_params(60*60*24*10); // 14 expediccion
-   session_start();
 
-  }
+
+
  
   require '../proyecto_2/configuraciones/database.php';
 
@@ -115,9 +113,42 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
         Logout
       </a>
     <?php else: ?>
-      <a href="./vistas/vista_1.php">Login</a> or
 
     <?php endif; ?>
+
+    <?php
+			
+			if(isset($_POST['email'])){
+				//$nombre = $_POST['nombre'];
+				$password = $_POST['password'];
+				$email = $_POST['email'];
+
+				$campos = array();
+
+				//if($nombre == ""){
+				//	array_push($campos, "El campo Nombre no pude estar vacío");
+				//}
+
+				if($password == "" || strlen($password) < 6){
+					array_push($campos, "El campo Password no puede estar vacío, ni tener menos de 6 caracteres.");
+				}
+
+				if($email == "" || strpos($email, "@") === false){
+					array_push($campos, "Ingresa un correo electrónico válido.");
+				}
+
+				if(count($campos) > 0){
+					echo "<div class='error'>";
+					for($i = 0; $i < count($campos); $i++){
+						echo "<li>".$campos[$i]."</i>";
+					}
+				}else{
+					echo "<div class='correcto'>
+							Datos correctos";
+				}
+				echo "</div>";
+			}
+		?>
 
 <section>
 
