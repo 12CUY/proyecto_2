@@ -32,7 +32,7 @@ include('../templates/menu.php');
 
     <main>
         <article>
-            <h1>Visual - informacion</h1>
+            <h1>Visual - información</h1>
             <hr>
             <br><br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quam quibusdam nihil similique et voluptates accusamus debitis quia facilis repellendus?</p>
