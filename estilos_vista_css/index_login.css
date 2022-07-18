@@ -6,6 +6,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h4 {
+    color: #ffffff;
+    background: #c50000;
+    margin: 5px;
+}
+
 section {
     position: relative;
     min-height: 100vh;

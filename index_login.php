@@ -1,6 +1,6 @@
 
      <!----------------------------------------- registro - formulario ---------------------------------->
-     <?php
+<?php
 require '../proyecto_2/configuraciones/database.php';
 $message = '';
    //connect database.php
@@ -26,13 +26,14 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
 
      <!----------------------------------------- iniciar session ----------------------------------
 
-?php
+<?php
 
   session_start();
 
   if (isset($_SESSION['user_id'])) {
-    header('Location: /php-login');
+    header('Location: ../proyecto_2/index_login.php');
   }
+
   require '../proyecto_2/configuraciones/database.php';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
@@ -42,10 +43,9 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
     $results = $records->fetch(PDO::FETCH_ASSOC);
 
     $message = '';
-
-    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+  if (is_countable($results) && count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      header("Location: /php-login");
+      header('Location: ../proyecto_2/index_login.php');
     } else {
       $message = 'Sorry, those credentials do not match';
     }
@@ -100,10 +100,19 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
 <body>
 
 <?php if(!empty($message)): ?>
-      <p> <?= $message ?></p>
+      <h4> <?= $message ?></h4>
     <?php endif; ?>
 
+    <?php if(!empty($user)): ?>
+      <br> bienvenido <?= $user['email']; ?>
+      <br>You are Successfully Logged In
+      <a href="vista_1php">
+        Logout
+      </a>
+    <?php else: ?>
+      <a href="./vistas/vista_1.php">Login</a> or
 
+    <?php endif; ?>
 
 <section>
 
