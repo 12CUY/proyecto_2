@@ -27,7 +27,7 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
      <!----------------------------------------- iniciar session ----------------------------------
 
 <?php
- session_set_cookie_params(60*60*24*10); // 14 expediccion
+ // session_set_cookie_params(60*60*24*10); // 14 expediccion
   session_start();
 
   if (isset($_SESSION['user_id'])) {
@@ -59,11 +59,12 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
      <!-----------------------------------------vista 1---------------------------------->
 
 <?php
+
   public function __construct(){
-   session_set_cookie_params(60*60*24*10); // 14 expediccion
+   //session_set_cookie_params(60*60*24*10); // 14 expediccion
    session_start();
 
-    }
+  }
  
   require '../proyecto_2/configuraciones/database.php';
 
