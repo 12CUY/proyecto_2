@@ -56,7 +56,7 @@
         </div>
       </a>
 
-      <a href="#">
+      <a href="sistema.php">
         <div class="option">
           <i class="far fa-id-badge" title="sistema"></i>
           <h4>Sistema - QR</h4>
