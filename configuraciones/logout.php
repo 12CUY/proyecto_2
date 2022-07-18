@@ -5,5 +5,5 @@
 
   session_destroy();
 
-  header('Location:vista_1.php');
+  header('Location: ../proyecto_2/index_login.php');
 ?>
