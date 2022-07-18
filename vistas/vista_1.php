@@ -3,6 +3,11 @@
     //menu union 
     
 ?>
+<?php
+    include('../templates/menu.php');
+    //menu union 
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

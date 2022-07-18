@@ -5,5 +5,7 @@
 
   session_destroy();
 
+
   header('Location:../proyecto_2/index_login.php');
+
 ?>

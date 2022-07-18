@@ -1,4 +1,4 @@
-composer require endroid/qr-code
+
 <?php
 $textqr=$_POST['textqr'];//Recibo la variable pasada por post
 $sizeqr=$_POST['sizeqr'];//Recibo la variable pasada por post
