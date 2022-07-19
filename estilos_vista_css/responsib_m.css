@@ -18,7 +18,7 @@ body
     height: 200px;
     transform: perspective(500px) rotate(-40deg) skew(25deg);
     box-shadow: -90px 75px 20px rgba(0,0,0,.3);
-    background: #fff url(celular.png);
+    background: #fff url(..//imagenes/celular.png);
     background-size: 320px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
