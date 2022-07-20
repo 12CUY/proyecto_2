@@ -3,7 +3,7 @@
     $server = "localhost";
     $username="root";
     $password="";
-    $dbname="qrcodedb2";
+    $dbname="";//qrcodedb2
 
     $conn = new mysqli($server,$username,$password,$dbname);
 
