@@ -17,7 +17,7 @@
         <nav class="navbar" style="background:#fff">
 		  <div class="container-fluid">
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="#">BA-Barcode Attendance</a>
+			  <a class="navbar-brand" href="#">JUMAWA</a>
 			</div>
 			<ul class="nav navbar-nav">
 			  <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>

@@ -36,7 +36,7 @@
 				<br>
 				
 				<div class="col-md-6">
-				<h3 style="color:#fff">GESTIÓN DE ASISTENCIA DE EMPLEADOS V1.0</h3>
+				<h3 style="color:#fff">GESTIÓN DE ASISTENCIA DOMOTICA</h3>
 				</div>
                 <div class="col-md-6">
 				<nav class="navbar navbar-default">
