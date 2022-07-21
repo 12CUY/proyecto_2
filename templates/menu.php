@@ -63,10 +63,10 @@
         </div>
       </a>
 
-      <a href="">
+      <a href="../vistas/video_de_prueba.php">
         <div class="option">
           <i class="far fa-id-badge" title="sistema"></i>
-          <h4>Sistema - QR</h4>
+          <h4>video de prueba</h4>
         </div>
       </a>
 
