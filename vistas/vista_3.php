@@ -37,7 +37,7 @@ include('../templates/menu.php');
             <br><br>
             <p></p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, unde alias architecto cupiditate, facilis nisi, incidunt fugiat soluta rerum voluptate, mollitia natus praesentium sunt repellat quidem? Consequatur, nihil. Dolore fuga officiis, similique animi, asperiores quia aspernatur eius. Provident, ipsam, dolores.</p>
+            <p> </p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptate dolorum! Eius optio, tempore temporibus, totam qui illum nihil. Earum, rerum quae magni aliquid optio repellat, rem assumenda eius accusantium facilis nam accusamus aperiam at dolorum iure nihil dicta aut modi doloribus excepturi cumque odio! Molestias at dolor ab consectetur.</p>
 
