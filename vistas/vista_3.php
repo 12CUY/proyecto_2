@@ -37,9 +37,9 @@ include('../templates/menu.php');
             <br><br>
             <p></p>
 
-            <p> </p>
+            <p> EDICION EN PROCESO </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptate dolorum! Eius optio, tempore temporibus, totam qui illum nihil. Earum, rerum quae magni aliquid optio repellat, rem assumenda eius accusantium facilis nam accusamus aperiam at dolorum iure nihil dicta aut modi doloribus excepturi cumque odio! Molestias at dolor ab consectetur.</p>
+            <p> </p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto excepturi enim reprehenderit expedita, mollitia animi autem sed reiciendis laudantium culpa natus ea blanditiis ullam molestias itaque laboriosam sunt quidem.</p>
         </article>
