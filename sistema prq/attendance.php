@@ -87,8 +87,8 @@
                             die("Connection failed" .$conn->connect_error);
                         }
                            $sql ="SELECT * FROM attendance LEFT JOIN student ON attendance.STUDENTID=student.STUDENTID";
-                           $query = $conn->query($sql);
-                           while ($row = $query->fetch_assoc()){
+                        $query = $conn->query($sql);
+                        while ($row = $query->fetch_assoc()){
                         ?>
                             <tr>
                                 <td><?php echo $row['LASTNAME'].', '.$row['FIRSTNAME'].' '.$row['MNAME'];?></td>
@@ -101,8 +101,8 @@
                         }
                         ?>
                     </tbody>
-                  </table>
-				  
+                </table>
+			
                 </div>
 				
                 </div>

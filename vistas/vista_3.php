@@ -35,7 +35,7 @@ include('../templates/menu.php');
             <h1>Visual - información</h1>
             <hr>
             <br><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quam quibusdam nihil similique et voluptates accusamus debitis quia facilis repellendus?</p>
+            <p></p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, unde alias architecto cupiditate, facilis nisi, incidunt fugiat soluta rerum voluptate, mollitia natus praesentium sunt repellat quidem? Consequatur, nihil. Dolore fuga officiis, similique animi, asperiores quia aspernatur eius. Provident, ipsam, dolores.</p>
 
