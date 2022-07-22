@@ -13,7 +13,7 @@
 <body id="body">
 
   <!--encabezado responsive-->
-  <header>
+  <header >
     <div class="icon__menu">
       <i class="fas fa-bars" id="btn_open"></i>
     </div>
@@ -23,7 +23,7 @@
 
     <div class="name__page">
       <i class="fab fa-asymmetrik"></i>
-      <h4>JMW</h4>
+      <h4>JUMAWA</h4>
     </div>
 
     <div class="options__menu">
@@ -56,19 +56,21 @@
         </div>
       </a>
 
-      <a href="sistema.php">
+      <a href="../sistema prq/">
         <div class="option">
-          <i class="far fa-id-badge" title="sistema"></i>
-          <h4>Sistema - QR</h4>
+          <i class="far fa-address-card" title="sistema"></i>
+          <h4>sistema PQR</h4>
         </div>
       </a>
 
-      <a href="#">
+      <a href="../vistas/video_de_prueba.php">
         <div class="option">
-          <i class="far fa-address-card" title="sistema"></i>
-          <h4>ON / Off</h4>
+          <i class="far fa-id-badge" title="sistema"></i>
+          <h4>video de prueba</h4>
         </div>
       </a>
+
+
       <a href="../index_login.php">
         <div class="option">
           <i class="fas fa-caret-square-left" title="sistema"></i>

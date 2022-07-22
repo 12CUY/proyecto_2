@@ -10,6 +10,8 @@
 		<link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
 		<link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="https://kit.fontawesome.com/b00314f003.js" crossorigin="anonymous"></script>
+
 
 		<link rel="stylesheet" href="css/buttons.dataTables.min.css">
     </head>
@@ -17,24 +19,23 @@
         <nav class="navbar" style="background:#fff">
 		  <div class="container-fluid">
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="#">JUMAWA</a>
+			  <a class="navbar-brand" href="../vistas/vista_1.php">JUMAWA</a>
 			</div>
 			<ul class="nav navbar-nav">
-			  <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> Maintenance <span class="caret"></span></a>
+			  <li class="active"><a href="../vistas/vista_1.php"><span class="glyphicon glyphicon-home"></span> Casa</a></li>
+			 <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> Mantenimiento <span class="caret"></span></a>-->
 				<ul class="dropdown-menu">
-				  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Student</a></li>
-				  <li><a href="#"><span class="glyphicon glyphicon-plus-sign"></span> New Student</a></li>
-				  <li><a href="attendance.php"><span class="glyphicon glyphicon-calendar"></span> Attendance</a></li>
-
+				  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sujeto</a></li><!--studentsss--><!-- -->
+				  <!--<li><a href="#"><span class="glyphicon glyphicon-plus-sign"></span> nuevo ingreso S</a></li>-->
+				  <!-- <li><a href="attendance.php"><span class="glyphicon glyphicon-calendar"></span> Asistencia</a></li>-->
 				</ul>
 			  </li>
-			  <li><a href="#"><span class="glyphicon glyphicon-align-justify"></span> Reports</a></li>
-              <li><a href="index.php"><span class="glyphicon glyphicon-time"></span> Check Attendance</a></li>
+			  <li><a href="#"><span class="glyphicon glyphicon-align-justify"></span> Informes</a></li>
+              <li><a href="index.php"><span class="glyphicon glyphicon-time"></span> Verificar Asistencia</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-			  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-			  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			  <li><a href="../index_login.php"><span class="fas fa-caret-square-left"></span> Inscribirse</a></li>
+
 			</ul>
 		  </div>
 		</nav>
@@ -68,15 +69,15 @@
 				
                 <div class="col-md-12">
 				<div style="border-radius: 5px;padding:10px;background:#fff;">
-               <p>Attendance Summary</p>
+               <p>Resumen de asistencia</p>
 			   <table id="example1" class="table table-bordered">
                     <thead>
-                        <tr>
-						<td>NAME</td>
-						<td>STUDENT ID</td>
-						<td>TIME IN</td>
-						<td>TIME OUT</td>
-						<td>LOGDATE</td>
+						<tr>
+						<td>Nombre</td><!--LOGDATE name-->
+						<td>IDENTIFICACIÓN</td><!--student-->
+						<td>Comineza el tiempo</td><!--TIME IN<-->
+						<td>Tiempo terminado</td><!--TIME OUT-->
+						<td>FECHA DE REGISTRO</td><!--LOGDATE-->
                         </tr>
                     </thead>
                     <tbody>
