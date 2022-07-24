@@ -69,7 +69,12 @@
           <h4>video de prueba</h4>
         </div>
       </a>
-
+      <a href="../vistas/vista_5.php">
+        <div class="option">
+          <i class="far fa-id-badge" title="sistema"></i>
+          <h4>video de prueba</h4>
+        </div>
+      </a>
 
       <a href="../index_login.php">
         <div class="option">

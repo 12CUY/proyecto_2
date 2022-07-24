@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos_vista_css/vista_5.css">
     <title>Document</title>
     <link rel="stylesheet" href="../estilos_vista_css/responsib_m.css">
 </head>
@@ -51,7 +52,7 @@
                 <br><br>
 
         </article>
-
+    
         <a href="../vistas/vista_2.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
@@ -59,6 +60,21 @@
         <span id="span4"></span>
         SIGUIENTE
     </a>
-    </main>
+</main>
+<section>
+<div class="sandbox">
+      <div class="content">
+        <section>
+          <h1>Goku</h1>
+
+          <div class="goku-block">
+            <div class="goku"></div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+</section>
 </body>
 </html>
