@@ -57,13 +57,18 @@
         <span id="span4"></span>
         SIGUIENTE
     </a>
-    </main>
-        <div class="center">
+    <br><br>
+    <br><br>
+    <br><br>
+    
+    <div class="center">
             <div class="box"></div>
         </div>
-        <div id="casa" class="video">
-            <video autoplay loop src="../videos/casa.mp4"></video>
+        <div class="video">
+            <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
             <h2>casa</h2>
         </div>
+    </main>
+        
 </body>
 </html>

@@ -21,7 +21,7 @@
     height: 200px;
     transform: perspective(500px) rotate(-40deg) skew(25deg);
     box-shadow: -90px 75px 20px rgba(0,0,0,.3);
-    background: #fff url(../imagenes/celular.png);
+    background:#9b9b9b  url(../imagenes/celular.png);
     background-size: 320px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -38,13 +38,7 @@
     margin-right: 1100px;
     border:1px solid rgb(8, 2, 2);
 }
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
-*
-{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins' , sans-serif;
-}
+
 .video
 {
     position: absolute;
@@ -71,7 +65,7 @@
     left: 0;
     width: 560px;
     height:315px;
-    background: #fff;
+    background: #9b9b9b;
     font-size: 10vw;
     text-align: center;
     text-transform: uppercase;
