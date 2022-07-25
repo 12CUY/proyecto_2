@@ -10,33 +10,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../estilos_vista_css/responsib_m.css">
-    <link rel="stylesheet" href="../estilos_vista_css/imagen_hover.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 
 </head>
 <body>
-        <div class="center">
-            <div class="box"></div>
-        </div>
-    <section>
-        <div class="container-portada">
-            <div class="capa-gradient"></div>
-            <div class="container-details">
-                <div class="details">
                     <h1>DOMOTICA</h1>
                     <p> Sistema capaces de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de gestión energética, seguridad, bienestar y comunicación.</p>
                     <button>Ver mas detalles</button>
-               </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <main>
-        <article>
+              
             <h1>Casa - información</h1>
             <hr>
+        <div class="center">
+            <div class="box"></div>
+        </div>
+        <div class="texto">
             <br><br>
+            <blockquote> 
             <p>El sistema nos permite gestionar dispositivos para el ahorro energético y eficiencia energética, 
                 la domótica juega un papel muy importante ya que se cuenta con la inteligencia suficiente para llevar 
                 a muchas acciones, una de ellas es la gestión de la energía lo cual nos ayuda a que nuestro consumo de 
@@ -49,18 +37,12 @@
             <p>Eficiencia energética: Esta subcategoría incluye aplicaciones que no reducen el consumo de energía, pero 
                 logran aprovecharlo al máximo, por ejemplo, con un sistema de corrección del factor de potencia, evitamos 
                 la aparición de potencias reactivas que sobrecargan las líneas que no se utilizan para cualquier propósito.</p>
-                <br><br>
-
-        </article>
-    
-        <a href="../vistas/vista_2.php" class="btn-neon">
-        <span id="span1"></span>
-        <span id="span2"></span>
-        <span id="span3"></span>
-        <span id="span4"></span>
-        SIGUIENTE
-    </a>
-</main>
-
+            </blockquote>   
+            <br><br>
+        </div>
+        <div id="casa" class="video">
+            <video autoplay loop src="../videos/casa.mp4"></video>
+            <h2>casa</h2>
+        </div>
 </body>
 </html>
