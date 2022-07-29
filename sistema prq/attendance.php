@@ -44,33 +44,33 @@
                 <div class="col-md-12">
 					<?php
 					if(isset($_SESSION['error'])){
-					  echo "
+					echo "
 						<div class='alert alert-danger alert-dismissible' style='background:red;color:#fff'>
-						  <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-						  <h4><i class='icon fa fa-warning'></i> Error!</h4>
-						  ".$_SESSION['error']."
+						<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+						<h4><i class='icon fa fa-warning'></i> Error!</h4>
+						".$_SESSION['error']."
 						</div>
-					  ";
-					  unset($_SESSION['error']);
+					";
+					unset($_SESSION['error']);
 					}
 					if(isset($_SESSION['success'])){
-					  echo "
+					echo "
 						<div class='alert alert-success alert-dismissible' style='background:green;color:#fff'>
-						  <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-						  <h4><i class='icon fa fa-check'></i> Success!</h4>
-						  ".$_SESSION['success']."
+						<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+						<h4><i class='icon fa fa-check'></i> Success!</h4>
+						".$_SESSION['success']."
 						</div>
-					  ";
-					  unset($_SESSION['success']);
+					";
+					unset($_SESSION['success']);
 					}
-				  ?>
+				?>
 
                 </div>
 				
                 <div class="col-md-12">
 				<div style="border-radius: 5px;padding:10px;background:#fff;">
-               <p>Resumen de asistencia</p>
-			   <table id="example1" class="table table-bordered">
+                <p>Resumen de asistencia</p>
+			    <table id="example1" class="table table-bordered">
                     <thead>
 						<tr>
 						<td>Nombre</td><!--LOGDATE name-->
