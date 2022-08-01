@@ -73,10 +73,10 @@
 			    <table id="example1" class="table table-bordered">
                     <thead>
 						<tr>
-						<td>Nombre</td><!--LOGDATE name-->
+						<td>NOMBRE</td><!--LOGDATE name-->
 						<td>IDENTIFICACIÓN</td><!--student-->
-						<td>Comineza el tiempo</td><!--TIME IN<-->
-						<td>Tiempo terminado</td><!--TIME OUT-->
+						<td>TIEMPO DE ENTRADA</td><!--TIME IN<-->
+						<td>TIEMPO DE SALIDA</td><!--TIME OUT-->
 						<td>FECHA DE REGISTRO</td><!--LOGDATE-->
                         </tr>
                     </thead>
