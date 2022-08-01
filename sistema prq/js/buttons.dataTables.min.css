@@ -248,7 +248,7 @@ div.dt-button-collection a.dt-button.active:not(.disabled) {
     background: -o-linear-gradient(top, #f0f0f0 0%, #dadada 100%);
     background: linear-gradient(to bottom, #f0f0f0 0%, #dadada 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr="#f0f0f0", EndColorStr="#dadada");
-    box-shadow: inset 1px 1px 3px #666
+    box-shadow: inset 1px 1px 3px rgb(110, 44, 44)
 }
 
 div.dt-button-collection.fixed {
@@ -354,7 +354,7 @@ div.dt-button-background {
 button.dt-button.processing,
 div.dt-button.processing,
 a.dt-button.processing {
-    color: rgba(0, 0, 0, 0.2)
+    color: #75050533
 }
 
 button.dt-button.processing:after,

@@ -15,8 +15,8 @@
 
 		<link rel="stylesheet" href="css/buttons.dataTables.min.css">
     </head>
-    <body style="background:#eee">
-        <nav class="navbar" style="background:#fff">
+    <body style="background:#424040">
+        <nav class="navbar" style="background:#8b2a2a">
 		  <div class="container-fluid">
 			<div class="navbar-header">
 			  <a class="navbar-brand" href="../vistas/vista_1.php">JUMAWA</a>
@@ -45,7 +45,7 @@
 					<?php
 					if(isset($_SESSION['error'])){
 					echo "
-						<div class='alert alert-danger alert-dismissible' style='background:red;color:#fff'>
+						<div class='alert alert-danger alert-dismissible' style='background:red;color:#cccd'>
 						<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
 						<h4><i class='icon fa fa-warning'></i> Error!</h4>
 						".$_SESSION['error']."
@@ -114,7 +114,7 @@
 		<script>
 			function Export()
 			{
-				var conf = confirm("Please confirm if you wish to proceed in exporting the attendance in to Excel File");
+				var conf = confirm("Confirme si desea continuar con la exportación de la asistencia a un archivo de Excel");
 				if(conf == true)
 				{
 					window.open("export.php",'_blank');
