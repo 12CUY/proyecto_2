@@ -11,7 +11,7 @@ include('../templates/menu.php');
     <title>SEGURIDAD - DOMOTICA</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link rel="stylesheet" href="../estilos_vista_css/imagen_hover.css">
-
+    <link rel="stylesheet" href="../estilos_vista_css/responsib_m.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
@@ -47,17 +47,24 @@ include('../templates/menu.php');
                 su lugar están los elementos que nos permiten saber qué está pasando, ya sea local o remotamente.</p>
 
         </article>
+        <br><br><br>
+        <div class="center">
+            <div class="box"></div>
+        </div>
+        <div class="video">
+            <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
+            <h2>seguridad</h2><!--cambiar al tamaño original y cambiar video-->
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <a href="../sistema prq/" class="btn-neon">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        SIGUIENTE
+         </a>
+    
         <br><br>
-
-        <a href="../vistas/codigo_QR_5.php" class="btn-neon">
-            <span id="span1"></span>
-            <span id="span2"></span>
-            <span id="span3"></span>
-            <span id="span4"></span>
-            SIGUIENTE
-        </a>
-    </main>
-
 </body>
 
 </html>

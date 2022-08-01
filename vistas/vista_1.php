@@ -10,7 +10,8 @@
     <title>CASA - DOMOTICA</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link rel="stylesheet" href="../estilos_vista_css/imagen_hover.css">
-    
+    <link rel="stylesheet" href="../estilos_vista_css/responsib_m.css">
+
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
@@ -48,14 +49,24 @@
                 <br><br>
 
         </article>
-
+        <br><br><br>
+        <div class="center">
+            <div class="box"></div>
+        </div>
+        <div class="video">
+            <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
+            <h2 align="center" >casa</h2><!--cambiar al tamaño original y cambiar video-->
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
         <a href="../vistas/vista_2.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
         <span id="span3"></span>
         <span id="span4"></span>
         SIGUIENTE
-    </a>
+         </a>
+    
+        <br><br>
     </main>
     
 </body>
