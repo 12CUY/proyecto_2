@@ -45,7 +45,7 @@
 					<a class="navbar-brand" href="#">Escáner de código de barras </a>
 				</div>
 					<ul class="nav navbar-nav navbar-right">
-					<li><a href="attendance.php"> <span class="glyphicon glyphicon-calendar"></span> Attendance</a></li>
+					<li><a href="attendance.php"> <span class="glyphicon glyphicon-calendar"></span> Asistencia</a></li>
 					</ul>
 				</div>
 				</nav>
@@ -56,7 +56,7 @@
                 </form>
 				 <div class="row">
 						<div class="col-md-12">
-						 <label style="color:#fff">Legend: </label>
+						 <label style="color:#fff">Mensaje: </label>
 							<label class="label label-primary">Tiempo en</label>
 							<label class="label label-Success">Se acabó el tiempo</label>
 							<label class="label label-danger">Número de identificación no encontrado</label>

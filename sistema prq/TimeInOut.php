@@ -25,7 +25,7 @@
 				}else{
 					$sql = "INSERT INTO attendance(STUDENTID,TIMEIN,LOGDATE,STATUS,YEAR) VALUES('$studentID','$time','$date','0','$year')";
 					if($conn->query($sql) ===TRUE){
-					 $_SESSION['success'] = 'bIENVENIDO: '.$row['FIRSTNAME'].' '.$row['LASTNAME'].' | TIEMPO DE: '.$time;
+					 $_SESSION['success'] = 'BIENVENIDO: '.$row['FIRSTNAME'].' '.$row['LASTNAME'].' | TIEMPO DE: '.$time;
 			 		}
 					 else{
 			  $_SESSION['error'] = $conn->error;

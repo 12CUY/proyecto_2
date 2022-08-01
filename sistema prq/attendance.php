@@ -3,7 +3,7 @@
     <head>
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <title>Barcode | Attendance</title>
+	  <title>horario | asistencia</title>
 	  <!-- Tell the browser to be responsive to screen width -->
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -69,7 +69,7 @@
 				
                 <div class="col-md-12">
 				<div style="border-radius: 5px;padding:10px;background:#fff;">
-                <p>Resumen de asistencia</p>
+                <p>RESUMEN DE ASISTENCIA</p>
 			    <table id="example1" class="table table-bordered">
                     <thead>
 						<tr>
