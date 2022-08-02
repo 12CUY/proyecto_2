@@ -63,7 +63,7 @@
         </div>
       </a>
 <!--huella-->
-      <a href="../vistas/voz.php">
+      <a href="../voz_alexa/alexa.php">
         <div class="option">
           <i class="far fa-id-badge" title="sistema"></i>
           <h4>Domotica || ALEXA </h4>

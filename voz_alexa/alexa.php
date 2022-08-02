@@ -1,17 +1,18 @@
 <?php
-include('../templates/menu.php');
-//menu union 
+    include('../templates/menu.php')
+    //menu union 
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
+    <title>Document</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos_vista_css/estilos_alexa.css">
-    <title>alexa</title>
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
 <div id="all">
 <div class="item item-1"></div>
@@ -218,12 +219,15 @@ include('../templates/menu.php');
     <div class="item item-099"></div>
     <div class="item item-0100"></div>
     </div>
-    <center>
+    
+<center>
     <div>
-        <button type="button" onclick="start()" id="btn">comenzar</button>
+        <button type="button" onclick="start()" id="btn">Start</button>
     </div>
 </center>
-<script src="../javascrip/alexa_funcion.js"></script>
-<script src="../javascrip/main.min.js"></script>
+
+<script src="annyang.min.js"></script>
+<script src="main.js"></script>
 </body>
+
 </html>
