@@ -63,10 +63,10 @@
         </div>
       </a>
 <!--huella-->
-      <a href="../vistas/video_de_prueba.php">
+      <a href="../vistas/voz.php">
         <div class="option">
           <i class="far fa-id-badge" title="sistema"></i>
-          <h4>huella</h4>
+          <h4>Domotica || ALEXA </h4>
         </div>
       </a>
       <!---->

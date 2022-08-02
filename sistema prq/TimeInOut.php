@@ -12,7 +12,7 @@
 		$query = $conn->query($sql);
 
 		if($query->num_rows < 1){
-			$_SESSION['error'] = 'No se puede encontrar el número de código de barras '.$studentID;
+			$_SESSION['error'] = 'usuario no registrado || contactanos'.$studentID;
 		}else{
 				$row = $query->fetch_assoc();
 				$id = $row['STUDENTID'];
