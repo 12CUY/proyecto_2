@@ -65,14 +65,14 @@
 <!--huella-->
       <a href="../voz_alexa/alexa.php">
         <div class="option">
-          <i class="far fa-id-badge" title="sistema"></i>
+          <i class="far fa-id-badge" title="alexa"></i>
           <h4>Domotica || ALEXA </h4>
         </div>
       </a>
       <!---->
-      <a href="#">
+      <a href="../vistas/vista_1.php">
         <div class="option">
-          <i class="far fa-id-badge" title="sistema"></i>
+          <i class="far fa-id-badge" title="video"></i>
           <h4>video de prueba</h4>
         </div>
       </a>
@@ -80,7 +80,7 @@
 <!--cerrar session-->
       <a href="../index_login.php">
         <div class="option">
-          <i class="fas fa-caret-square-left" title="sistema"></i>
+          <i class="fas fa-caret-square-left" title="cerrar sesion"></i>
           <h4>Cerrar sesion</h4>
         </div>
       </a>
