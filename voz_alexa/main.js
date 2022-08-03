@@ -65,12 +65,12 @@ const comandos = {
         annyang.abort()
     },
 
-    "Apagate": () => {
+    "Apagate Frost": () => {
         voz('ok, hasta luego, señor')
         annyang.abort();
     },
 
-    "apágate por tiempo minutos": tiempo => {
+    "apagate por": tiempo => {
         voz('ok, vuelvo en' + tiempo + 'minutos');
         annyang.abort();
         setTimeout(() => {
@@ -139,8 +139,8 @@ const comandos = {
         voz(chistes[ran])
     },
 
-    "off": () => {
-        voz("entendido");
+    "apagado": () => {
+        voz("entendido, hasta luego señor");
         location.reload();
     },
 
@@ -185,7 +185,7 @@ const comandos = {
         window.open("tel:" + telefono)
     },
 
-    "di *frase": frase => {
+    "repite *frase": frase => {
         voz(frase);
     },
     "escribe *dicto": dicto => {
@@ -195,11 +195,11 @@ const comandos = {
     // AMABILIDAD
 
     "gracias": () => {
-        voz("Para servirte");
+        voz("Para servirte señor");
     },
 
     "ulala": () => {
-        voz('Me hace sonrojar, señor')
+        voz('Áhi me hace sonrojar señor')
     },
 
     "Cómo estás": () => {
@@ -226,7 +226,7 @@ const comandos = {
     },
 
     "Hola": () => {
-        voz("aquí estoy, señor");
+        voz("aquí estoy señor");
     },
 
     "Me puedes ayudar": () => {
