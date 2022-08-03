@@ -58,7 +58,7 @@
       <!--sistema completo falta la fecha de origen -->
       <a href="../sistema prq/">
         <div class="option">
-          <i class="far fa-address-card" title="sistema"></i>
+          <i class="fas fa-sitemap" title="sistema"></i>
           <h4>sistema PQR</h4>
         </div>
       </a>

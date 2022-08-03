@@ -37,15 +37,15 @@ const comandos = {
     },
 
     "Buenos días Frost": () => {
-        voz("Bienvenido de nuevo, señor");
+        voz("Buenos días, señor");
     },
 
     "Buenas tardes Frost": () => {
-        voz("Bienvenido de nuevo, señor");
+        voz("Buenas tardes, señor");
     },
 
-    "Buenas noches Frost": () => {
-        voz("Bienvenido de nuevo, señor");
+    "Buenas noches": () => {
+        voz("Buenas noches, señor");
     },
 
     // DESPEDIDA
@@ -55,7 +55,7 @@ const comandos = {
         annyang.abort()
     },
 
-    "Hasta luego Frost": () => {
+    "Hasta luego": () => {
         voz("Hasta luego, señor");
         annyang.abort()
     },
@@ -65,12 +65,12 @@ const comandos = {
         annyang.abort()
     },
 
-    "apágate": () => {
+    "Apagate": () => {
         voz('ok, hasta luego, señor')
         annyang.abort();
     },
 
-    "apágate por *tiempo minutos": tiempo => {
+    "apágate por tiempo minutos": tiempo => {
         voz('ok, vuelvo en' + tiempo + 'minutos');
         annyang.abort();
         setTimeout(() => {
@@ -94,12 +94,16 @@ const comandos = {
         voz('señor, son las ' + strTime)
     },
 
-    "quién te creo": () => {
+    "cuál es tu creador": () => {
         voz("El desarrollador wiliam morales");
     },
 
     "qué eres": () => {
         voz("soy un asistente virtual");
+    },
+
+    "para que fuiste creada": () => {
+        voz("Para ayudar a las personas");
     },
 
     "cuál es tu nombre": () => {
@@ -135,7 +139,7 @@ const comandos = {
         voz(chistes[ran])
     },
 
-    "reiniciate": () => {
+    "off": () => {
         voz("entendido");
         location.reload();
     },
@@ -150,9 +154,30 @@ const comandos = {
         window.open("https://www.google.com/search?q=" + busqueda)
     },
 
+    "abre *busqueda": busqueda => {
+        voz("ok, abriendo " + busqueda + " para ti");
+        window.open("https://www.amazon.com/?&tag=googleglobalp-20&ref=pd_sl_7nnedyywlk_e&adgrpid=82342659060&hvpone=&hvptwo=&hvadid=585475370855&hvpos=&hvnetw=g&hvrand=5989762046142437614&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9069516&hvtargid=kwd-10573980&hydadcr=2246_13468515&gclid=CjwKCAjwlqOXBhBqEiwA-hhitMfUp5r94tAQ8MQ_Pj5V62Rh9HA9WoP9w-yKTIf_q-S9YdJu9BHeRRoCxYgQAvD_BwE" + busqueda)
+    },
+
     "quiero escuchar *busqueda": busqueda => {
         voz("ok, buscando " + busqueda + "para ti");
-        window.open("https://www.youtube.com/results?search_query=" + busqueda)
+        window.open("https://www.youtube.com/watch?v=EbHxWU52ZH0" + busqueda)
+    },
+
+    "buscar *busqueda": busqueda => {
+        voz("ok, buscando " + busqueda + "para ti");
+        window.open("https://www.youtube.com/watch?v=ZAFFYm6r68E" + busqueda)
+    },
+
+    
+    "tengo hambre *busqueda": busqueda => {
+        voz("ok, buscando " + busqueda + "para ti");
+        window.open("https://www.mcdonalds.com.ec/" + busqueda)
+    },
+
+    "reproduce *busqueda": busqueda => {
+        voz("ok, reproduciendo musica " + busqueda + "para ti");
+        window.open("https://www.youtube.com/watch?v=DJUAXq-_y6M" + busqueda)
     },
 
     "llama al *telefono": telefono => {
@@ -184,6 +209,11 @@ const comandos = {
     "Te presento a *nombre": nombre => {
         voz("Hola" + nombre + ", mi nombre es Frost, es un placer conocerte");
     },
+
+    "Te presento *nombres": nombres => {
+        voz("Hola" + nombres + ", mi nombre es Frost, es un placer conocerlos y les doy una calida bienvenida");
+    },
+
 
     // LLAMADA A LA ACCIÓN
 
@@ -218,7 +248,7 @@ function voz(texto) {
     var textoAEscuchar = texto;
     var mensaje = new SpeechSynthesisUtterance();
     mensaje.text = textoAEscuchar;
-    mensaje.volume = 1;
+    mensaje.volume = 5;
     mensaje.rate = 0.9;
     mensaje.pitch = 1;
     // ¡Parla!
