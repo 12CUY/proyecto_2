@@ -176,7 +176,7 @@ const comandos = {
     },
 
     "reproduce *busqueda": busqueda => {
-        voz("ok, reproduciendo musica " + busqueda + "para ti");
+        voz("ok, reproduciendo " + busqueda + "para ti");
         window.open("https://www.youtube.com/watch?v=DJUAXq-_y6M" + busqueda)
     },
 

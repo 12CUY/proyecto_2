@@ -65,7 +65,7 @@
 <!--huella-->
       <a href="../voz_alexa/alexa.php">
         <div class="option">
-          <i class="far fa-id-badge" title="alexa"></i>
+          <i class="fa-solid fa-microphone-lines" title="alexa"></i>
           <h4>Domotica || ALEXA </h4>
         </div>
       </a>
