@@ -222,7 +222,7 @@
     
 <center>
     <div>
-        <button type="button" onclick="start()" id="btn">COMNEZAR</button>
+        <button type="button" onclick="start()" id="btn">PRECIONE</button>
     </div>
 </center>
 

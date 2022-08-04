@@ -42,27 +42,18 @@ include('../templates/menu.php');
                 para, por un lado, hacer que las tareas repetitivas y rutinarias se realicen de forma automática, y por otro, 
                 programar escenas para que el inmueble se adapte a las necesidades. necesidades de cada persona.</p>
 
-            <p>El confort no es poder encender o apagar luces, ni subir y bajar persianas, sino poder hacerlo en cualquier 
-                momento y desde cualquier lugar, dentro o fuera de la casa, de forma sencilla y armoniosa, y si es posible 
-                de forma automática. sin perder en ningún momento el control manual.</p>
-
-            <p>El confort desde el punto de vista de la domótica es básicamente el control de dispositivos que se divide, 
-                por citar algunos ejemplos, en: control de iluminación, control de clima, control de apertura, control de riego, 
-                control multimedia, generación de escenas.</p>
                 <br><br>
 
 
         </article>
         <br><br><br>
-        <div class="center">
-            <div class="box"></div>
-        </div>
         <div class="video">
             <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
-            <h2 align="center">Confort</h2> <!--cambiar al tamaño original y cambiar video-->
+            <h2 >Confort</h2> <!--cambiar al tamaño original y cambiar video-->
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br>
-        <a href="../vistas/vista_3.php" class="btn-neon" align="center">
+        <br><br><br>
+        <a href="../vistas/vista_3.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
         <span id="span3"></span>

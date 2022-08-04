@@ -42,27 +42,21 @@ include('../templates/menu.php');
                 la vivienda, puede, de forma muy sencilla y eficaz, hacerse con el control de esa información y poder, a
                 través de la programación instalada, proteger la toda la casa.</p>
 
-            <p>Esta es también una de las aplicaciones más importantes de la domótica, ya que la figura de la persona que lleva
-                la responsabilidad global del hogar a lo largo del día es cada vez menos frecuente en las familias actuales; en
-                su lugar están los elementos que nos permiten saber qué está pasando, ya sea local o remotamente.</p>
-
         </article>
         <br><br><br>
-        <div class="center">
-            <div class="box"></div>
-        </div>
         <div class="video">
             <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
             <h2>seguridad</h2><!--cambiar al tamaño original y cambiar video-->
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br>
         <a href="../sistema prq/" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
         <span id="span3"></span>
         <span id="span4"></span>
         SIGUIENTE
-         </a>
+        </a>
     
         <br><br>
 </body>

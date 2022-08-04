@@ -46,21 +46,21 @@ include('../templates/menu.php');
             <br><br>
         </article>
         <br><br><br>        
-        <div class="center">
-            <div class="box"></div>
-        </div>
+
+
         <div class="video">
             <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
             <h2>Visual</h2><!--cambiar al tamaño original y cambiar video-->
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br>
         <a href="../vistas/vista_4.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
         <span id="span3"></span>
         <span id="span4"></span>
         SIGUIENTE
-         </a>
+        </a>
     
         <br><br>
     </main>

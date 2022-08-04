@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../estilos_vista_css/imagen_hover.css">
     <link rel="stylesheet" href="../estilos_vista_css/responsib_m.css">
 
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width,, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
 </head>
 <body>
 <section>
@@ -21,7 +22,8 @@
         <div class="container-details">
             <div class="details">
                 <h1>DOMOTICA</h1>
-                <p> Sistema capaces de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de gestión energética, seguridad, bienestar y comunicación.</p>
+                <p> Sistema capaces de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de 
+                    gestión energética, seguridad, bienestar y comunicación.</p>
                 <button>Ver mas detalles</button>
             </div>
         </div>
@@ -39,32 +41,23 @@
                 a muchas acciones, una de ellas es la gestión de la energía lo cual nos ayuda a que nuestro consumo de 
                 energía pueda ser aprovechada al máximo evitando el desperdicio de la misma.</p>
             
-            <p>Ahorro de energía: esta subcategoría incluye todas las aplicaciones que buscan reducir el consumo evitando 
-                el desperdicio de energía, por ejemplo, notificación de puertas o ventanas abiertas cuando la calefacción 
-                está encendida.</p>
-            
-            <p>Eficiencia energética: Esta subcategoría incluye aplicaciones que no reducen el consumo de energía, pero 
-                logran aprovecharlo al máximo, por ejemplo, con un sistema de corrección del factor de potencia, evitamos 
-                la aparición de potencias reactivas que sobrecargan las líneas que no se utilizan para cualquier propósito.</p>
-                <br><br>
+            <br><br>
 
         </article>
         <br><br><br>
-        <div class="center">
-            <div class="box"></div>
-        </div>
         <div class="video">
             <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
-            <h2 align="center" >casa</h2><!--cambiar al tamaño original y cambiar video-->
+            <h2 >casa</h2><!--cambiar al tamaño original y cambiar video-->
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br>
         <a href="../vistas/vista_2.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
         <span id="span3"></span>
         <span id="span4"></span>
         SIGUIENTE
-         </a>
+        </a>
     
         <br><br>
     </main>
