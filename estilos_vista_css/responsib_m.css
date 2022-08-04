@@ -10,14 +10,12 @@
     width: 600px;
     margin-left: 100px;
 }
-<<<<<<< HEAD
+HEAD
 .box
 
 .box:hover
-{
-=======
 
-.box {
+.box{
     float: right;
     position: relative;
     width: 400px;
@@ -32,7 +30,7 @@
 }
 
 .box:hover {
->>>>>>> 0cecfa5ce048f8b4df238db72adc8273d0691bb5
+
     transform: perspective(500px) rotate(-40deg) skew(25deg) translate(50px, -50px);
     box-shadow: -150px 115px 100px rgba(0, 0, 0, .3);
 }
