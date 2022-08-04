@@ -6,7 +6,7 @@
         $studentID =$_POST['studentID'];
 		$date = date('Y-o-W');
 		$year = date('Y');
-		$time = date('H:i:s A');
+		$time = date('c');
 
 		$sql = "SELECT * FROM student WHERE STUDENTID = '$studentID'";
 		$query = $conn->query($sql);
