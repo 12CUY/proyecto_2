@@ -159,11 +159,13 @@ const comandos = {
         window.open("https://www.amazon.com/?&tag=googleglobalp-20&ref=pd_sl_7nnedyywlk_e&adgrpid=82342659060&hvpone=&hvptwo=&hvadid=585475370855&hvpos=&hvnetw=g&hvrand=5989762046142437614&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9069516&hvtargid=kwd-10573980&hydadcr=2246_13468515&gclid=CjwKCAjwlqOXBhBqEiwA-hhitMfUp5r94tAQ8MQ_Pj5V62Rh9HA9WoP9w-yKTIf_q-S9YdJu9BHeRRoCxYgQAvD_BwE" + busqueda)
     },
 
+    // dance
     "quiero escuchar *busqueda": busqueda => {
         voz("ok, buscando " + busqueda + "para ti");
         window.open("https://www.youtube.com/watch?v=EbHxWU52ZH0" + busqueda)
     },
 
+// electronica
     "buscar *busqueda": busqueda => {
         voz("ok, buscando " + busqueda + "para ti");
         window.open("https://www.youtube.com/watch?v=ZAFFYm6r68E" + busqueda)
@@ -175,6 +177,7 @@ const comandos = {
         window.open("https://www.mcdonalds.com.ec/" + busqueda)
     },
 
+    // vachata
     "reproduce *busqueda": busqueda => {
         voz("ok, reproduciendo " + busqueda + "para ti");
         window.open("https://www.youtube.com/watch?v=DJUAXq-_y6M" + busqueda)
