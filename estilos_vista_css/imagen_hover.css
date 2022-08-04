@@ -2,11 +2,17 @@
 
 .container-portada {
     width: 100%;
-    height: 400px;
+    height: 300px;
     position: relative;
+<<<<<<< HEAD
     background-image: url(../imagenes/logo2.png);
     background-size: 200%;
     animation: movimiento 20s infinite linear alternate;
+=======
+    background-image: url(../imagenes/logo.png);
+    background-size: 175%;
+    animation: movimiento 7.5s infinite linear alternate;
+>>>>>>> 0cecfa5ce048f8b4df238db72adc8273d0691bb5
 }
 
 @keyframes movimiento {

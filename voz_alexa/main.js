@@ -4,10 +4,11 @@ function start() {
         annyang.start({ autoRestart: true, continuous: false });
         console.log("Listening...")
         annyang.addCommands(comandos);
+        annyang.debug()
         document.getElementById("btn").style.display = "none"
     }
 }
-annyang.debug()
+
 
 let bandera = false;
 annyang.addCallback('soundstart', function() {
@@ -32,10 +33,6 @@ const comandos = {
         voz("Bienvenido de nuevo, señor");
     },
 
-    "hey Frost": () => {
-        voz("Bienvenido de nuevo, señor");
-    },
-
     "Buenos días Frost": () => {
         voz("Buenos días, señor");
     },
@@ -47,7 +44,11 @@ const comandos = {
     "Buenas noches": () => {
         voz("Buenas noches, señor");
     },
-
+    "como estas": function() {
+        utter.text = 'Muy bien!';
+        utter.voice = voices[2];
+        window.speechSynthesis.speak(utter);
+    },
     // DESPEDIDA
 
     "Hasta mañana Frost": () => {
@@ -128,11 +129,6 @@ const comandos = {
         var chistes = ["¿Por qué las focas del circo miran siempre hacia arriba?, Porque es donde están los focos",
             "¡Estás obsesionado con la comida!, No sé a que te refieres croquetamente",
             "¿Por qué estás hablando con esas zapatillas?, Porque pone converse",
-            "¿Sabes cómo se queda un mago después de comer?, magordito",
-            "Me da un café con leche corto, Se me ha roto la máquina, cambio",
-            "¡Camarero! Este filete tiene muchos nervios, Normal, es la primera vez que se lo comen",
-            "Hola, ¿está Agustín?, No, estoy incomodín",
-            "¿Cuál es la fruta más divertida?, la naranja ja ja"
         ];
 
         var ran = Math.floor(Math.random() * chistes.length);
@@ -147,6 +143,11 @@ const comandos = {
     "limpia la consola": () => {
         voz("entendido");
         console.clear();
+    },
+
+    "pagina anterior *busqueda": busqueda => {
+        voz("ok, la pagina anterior es " + busqueda);
+        window.open("https://www.mozilla.org/" + busqueda)
     },
 
     "busca *busqueda": busqueda => {
@@ -205,9 +206,7 @@ const comandos = {
         voz('Áhi me hace sonrojar señor')
     },
 
-    "Cómo estás": () => {
-        voz('mejor que ayer, espero que usted tambien lo esté, señor')
-    },
+
 
     "Te presento a *nombre": nombre => {
         voz("Hola" + nombre + ", mi nombre es Frost, es un placer conocerte");

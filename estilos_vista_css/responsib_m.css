@@ -1,34 +1,49 @@
-
-.center
-{
+.center {
     width: 600px;
     position: absolute;
     top: 80%;
     left: 75%;
     transform: translate(-50%, -50%);
 }
-.texto
-{
-   width: 600px; 
-   margin-left: 100px;
 
+.texto {
+    width: 600px;
+    margin-left: 100px;
 }
+<<<<<<< HEAD
 .box
 
 .box:hover
 {
-    transform: perspective(500px) rotate(-40deg) skew(25deg) translate(50px, -50px);
-    box-shadow: -150px 115px 100px rgba(0,0,0,.3);
-}
-#casa
-{
-    margin-left: 150px;
-    margin-right: 1100px;
-    border:1px solid rgb(8, 2, 2);
+=======
+
+.box {
+    float: right;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    transform: perspective(500px) rotate(-40deg) skew(25deg);
+    box-shadow: -90px 75px 20px rgba(0, 0, 0, .3);
+    background: #9b9b9b url(../imagenes/celular.png);
+    background-size: 320px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: 0.5s;
 }
 
-.video
-{
+.box:hover {
+>>>>>>> 0cecfa5ce048f8b4df238db72adc8273d0691bb5
+    transform: perspective(500px) rotate(-40deg) skew(25deg) translate(50px, -50px);
+    box-shadow: -150px 115px 100px rgba(0, 0, 0, .3);
+}
+
+#casa {
+    margin-left: 150px;
+    margin-right: 1100px;
+    border: 1px solid rgb(8, 2, 2);
+}
+
+.video {
     position: absolute;
     width: 800px;
     height: 60vh;
@@ -37,22 +52,22 @@
     justify-content: center;
     align-items: center;
 }
-.video video
-{
+
+.video video {
     position: absolute;
     top: 0;
     left: 0;
     width: 560px;
-    height:315px;
+    height: 315px;
     object-fit: cover;
 }
-.video h2
-{
+
+.video h2 {
     position: absolute;
     top: 0;
     left: 0;
     width: 560px;
-    height:315px;
+    height: 315px;
     background: #9b9b9b;
     font-size: 10vw;
     text-align: center;
