@@ -63,7 +63,7 @@
         </div>
       </a>
 <!--huella-->
-      <a href="../voz_alexa/alexa.php">
+      <a href="../alexa/index.php">
         <div class="option">
           <i class="fa-solid fa-microphone-lines" title="alexa"></i>
           <h4>Domotica || ALEXA </h4>

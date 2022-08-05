@@ -1,23 +1,20 @@
-//la fucncion del botton
 function start() {
     if (annyang) {
-        annyang.setLanguage("es-CO") //asignacion del lenguaje
-        annyang.start({ autoRestart: true, continuous: false }); //INICIA LA HERRAMIENTA BOTON
-        console.log("Listening...") //LA HERRAMIENTA ME ESTA ESCUCHANDO
-        annyang.addCommands(comandos); //SE AGREGA LOS COMANDOS DE VOZ CADA VEZ QUE SE DIGA
+        annyang.setLanguage("es-CO")
+        annyang.start({ autoRestart: true, continuous: false });
+        console.log("Listening...")
+        annyang.addCommands(comandos);
         annyang.debug()
-        document.getElementById("btn").style.display = "none" //PRESIONO EL BOTON Y SE OCULTA
-
+        document.getElementById("btn").style.display = "none"
     }
 }
-
 
 let bandera = false;
 annyang.addCallback('soundstart', function() {
     if (!bandera) {
         document.getElementById("all2").style.display = "block"
         setTimeout(() => {
-            voz('Bienvenido de nuevo')
+            voz('Bienvenido de nuevo, señor')
             bandera = true;
         }, 1000);
     }
@@ -35,22 +32,22 @@ const comandos = {
         voz("Bienvenido de nuevo, señor");
     },
 
+    "hey Frost": () => {
+        voz("Bienvenido de nuevo, señor");
+    },
+
     "Buenos días Frost": () => {
-        voz("Buenos días, señor");
+        voz("Bienvenido de nuevo, señor");
     },
 
     "Buenas tardes Frost": () => {
-        voz("Buenas tardes, señor");
+        voz("Bienvenido de nuevo, señor");
     },
 
-    "Buenas noches": () => {
-        voz("Buenas noches, señor");
+    "Buenas noches Frost": () => {
+        voz("Bienvenido de nuevo, señor");
     },
-    "como estas": function() {
-        utter.text = 'Muy bien!';
-        utter.voice = voices[2];
-        window.speechSynthesis.speak(utter);
-    },
+
     // DESPEDIDA
 
     "Hasta mañana Frost": () => {
@@ -58,7 +55,7 @@ const comandos = {
         annyang.abort()
     },
 
-    "Hasta luego": () => {
+    "Hasta luego Frost": () => {
         voz("Hasta luego, señor");
         annyang.abort()
     },
@@ -68,12 +65,12 @@ const comandos = {
         annyang.abort()
     },
 
-    "Apagate Frost": () => {
+    "apágate": () => {
         voz('ok, hasta luego, señor')
         annyang.abort();
     },
 
-    "apagate por": tiempo => {
+    "apágate por *tiempo minutos": tiempo => {
         voz('ok, vuelvo en' + tiempo + 'minutos');
         annyang.abort();
         setTimeout(() => {
@@ -97,16 +94,12 @@ const comandos = {
         voz('señor, son las ' + strTime)
     },
 
-    "cuál es tu creador": () => {
-        voz("El desarrollador wiliam morales");
+    "quién te creo": () => {
+        voz("El desarrollador Mateo Vanegas");
     },
 
     "qué eres": () => {
         voz("soy un asistente virtual");
-    },
-
-    "para que fuiste creada": () => {
-        voz("Para ayudar a las personas");
     },
 
     "cuál es tu nombre": () => {
@@ -131,14 +124,19 @@ const comandos = {
         var chistes = ["¿Por qué las focas del circo miran siempre hacia arriba?, Porque es donde están los focos",
             "¡Estás obsesionado con la comida!, No sé a que te refieres croquetamente",
             "¿Por qué estás hablando con esas zapatillas?, Porque pone converse",
+            "¿Sabes cómo se queda un mago después de comer?, magordito",
+            "Me da un café con leche corto, Se me ha roto la máquina, cambio",
+            "¡Camarero! Este filete tiene muchos nervios, Normal, es la primera vez que se lo comen",
+            "Hola, ¿está Agustín?, No, estoy incomodín",
+            "¿Cuál es la fruta más divertida?, la naranja ja ja"
         ];
 
         var ran = Math.floor(Math.random() * chistes.length);
         voz(chistes[ran])
     },
 
-    "apagado": () => {
-        voz("entendido, hasta luego señor");
+    "reiniciate": () => {
+        voz("entendido");
         location.reload();
     },
 
@@ -147,51 +145,22 @@ const comandos = {
         console.clear();
     },
 
-    "pagina anterior *busqueda": busqueda => {
-        voz("ok, la pagina anterior es " + busqueda);
-        window.open("https://www.mozilla.org/" + busqueda) //abre ventana de busqueda
-    },
-
     "busca *busqueda": busqueda => {
         voz("ok, buscando " + busqueda + " para ti");
-        window.open("https://www.google.com/search?q=" + busqueda) //abre ventana de busqueda
+        window.open("https://www.google.com/search?q=" + busqueda)
     },
 
-    "abre *busqueda": busqueda => {
-        voz("ok, abriendo " + busqueda + " para ti");
-        window.open("https://www.amazon.com/?&tag=googleglobalp-20&ref=pd_sl_7nnedyywlk_e&adgrpid=82342659060&hvpone=&hvptwo=&hvadid=585475370855&hvpos=&hvnetw=g&hvrand=5989762046142437614&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9069516&hvtargid=kwd-10573980&hydadcr=2246_13468515&gclid=CjwKCAjwlqOXBhBqEiwA-hhitMfUp5r94tAQ8MQ_Pj5V62Rh9HA9WoP9w-yKTIf_q-S9YdJu9BHeRRoCxYgQAvD_BwE" + busqueda)
-    },
-
-    // dance
     "quiero escuchar *busqueda": busqueda => {
         voz("ok, buscando " + busqueda + "para ti");
-        window.open("https://www.youtube.com/watch?v=EbHxWU52ZH0" + busqueda)
-    },
-
-    // electronica
-    "buscar *busqueda": busqueda => {
-        voz("ok, buscando " + busqueda + "para ti");
-        window.open("https://www.youtube.com/watch?v=ZAFFYm6r68E" + busqueda) //abre ventana de busqueda
-    },
-
-
-    "tengo hambre *busqueda": busqueda => {
-        voz("ok, buscando " + busqueda + "para ti");
-        window.open("https://www.mcdonalds.com.ec/" + busqueda) //abre ventana de busqueda
-    },
-
-    // vachata
-    "reproduce *busqueda": busqueda => {
-        voz("ok, reproduciendo " + busqueda + "para ti");
-        window.open("https://www.youtube.com/watch?v=DJUAXq-_y6M" + busqueda) //abre ventana de busqueda
+        window.open("https://www.youtube.com/results?search_query=" + busqueda)
     },
 
     "llama al *telefono": telefono => {
         voz("ok, con gusto llamando al" + telefono);
-        window.open("tel:" + telefono) //abre ventana de busqueda
+        window.open("tel:" + telefono)
     },
 
-    "repite *frase": frase => {
+    "di *frase": frase => {
         voz(frase);
     },
     "escribe *dicto": dicto => {
@@ -201,28 +170,25 @@ const comandos = {
     // AMABILIDAD
 
     "gracias": () => {
-        voz("Para servirte señor"); // comunicacion con la voz
+        voz("Para servirte");
     },
 
     "ulala": () => {
-        voz('Áhi me hace sonrojar señor')
+        voz('Me hace sonrojar, señor')
     },
 
-
+    "Cómo estás": () => {
+        voz('mejor que ayer, espero que usted tambien lo esté, señor')
+    },
 
     "Te presento a *nombre": nombre => {
         voz("Hola" + nombre + ", mi nombre es Frost, es un placer conocerte");
     },
 
-    "Te presento *nombres": nombres => {
-        voz("Hola" + nombres + ", mi nombre es Frost, es un placer conocerlos y les doy una calida bienvenida");
-    },
-
-
     // LLAMADA A LA ACCIÓN
 
     "Frost": () => {
-        voz("aquí estoy, señor"); // comunicacion con la voz 
+        voz("aquí estoy, señor");
     },
 
     "Hey": () => {
@@ -230,7 +196,7 @@ const comandos = {
     },
 
     "Hola": () => {
-        voz("aquí estoy señor");
+        voz("aquí estoy, señor");
     },
 
     "Me puedes ayudar": () => {
@@ -252,14 +218,9 @@ function voz(texto) {
     var textoAEscuchar = texto;
     var mensaje = new SpeechSynthesisUtterance();
     mensaje.text = textoAEscuchar;
-    mensaje.volume = 2; //VOLUMEN DEL HABLA
-    mensaje.rate = 0.9; //LA VELOCIDAD QUE HABLA F
-    mensaje.pitch = 1.5; // EL IDIOMA COLOMBIA ESTA CAMBIAR A ESPAÑOL 
-
-    mensaj.voice = speechSyntehesis.getVoices().filter(function(voice) {
-        return voice.name == "Google español de Estados unidos";
-    })[0];
-
+    mensaje.volume = 5;
+    mensaje.rate = 1.2;
+    mensaje.pitch = 2;
     // ¡Parla!
     document.getElementById("all").style.visibility = "visible";
     setTimeout(() => {
@@ -268,21 +229,3 @@ function voz(texto) {
     }, 4000);
     speechSynthesis.speak(mensaje);
 }
-
-if ('speechSynthesis' in window) {} else {
-    alert('tu navegador no soportar')
-}
-
-// carga las voces que se tiene en el navegador
-
-function loadVoices() {
-    var voices = speechSynthesi.getVoices();
-}
-// execute loadvoices 
-loadVoices();
-
-// chrome loads voices asynchronously.
-
-window.speechSynthesis.onvoiceschanged = function(e) {
-    loadVoices()
-};

@@ -1,7 +1,8 @@
 <?php
-    include('../templates/menu.php')
+    include('../templates/menu.php');
     //menu union 
-?>
+    ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="alexa.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -222,7 +223,7 @@
     
 <center>
     <div>
-        <button type="button" onclick="start()" id="btn">PRECIONE</button>
+        <button type="button" onclick="start()" id="btn">Start</button>
     </div>
 </center>
 

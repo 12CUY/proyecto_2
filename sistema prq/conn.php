@@ -3,7 +3,7 @@
     $server = "localhost";
     $username="root";
     $password="";
-    $dbname="domotica";//qrcodedb2
+    $dbname="domotica_2";//qrcodedb2
 
     $conn = new mysqli($server,$username,$password,$dbname);
 

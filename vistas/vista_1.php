@@ -39,7 +39,7 @@
             <p>El sistema nos permite gestionar dispositivos para el ahorro energético y eficiencia energética, 
                 la domótica juega un papel muy importante ya que se cuenta con la inteligencia suficiente para llevar 
                 a muchas acciones, una de ellas es la gestión de la energía lo cual nos ayuda a que nuestro consumo de 
-                energía pueda ser aprovechada al máximo evitando el desperdicio de la misma.</p>
+                energía pueda ser aprovechada al máximo evitando el desperdicio de la misma.</p> <!--letra-->
             
             <br><br>
 

@@ -118,7 +118,8 @@ INSERT INTO `student` (`ID`, `STUDENTID`, `FIRSTNAME`, `MNAME`, `LASTNAME`, `AGE
 --
 
 CREATE TABLE `users` (
-  `id_usuarios` int(11) NOT NULL,
+  `id_usuarios` int(11) NOT NULL, -- cambiosv total
+  
   `user_name` varchar(200) NOT NULL,
   `email` varchar(200) NOT NULL,
   `password` varchar(200) NOT NULL,
