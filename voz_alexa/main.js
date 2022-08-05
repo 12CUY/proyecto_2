@@ -273,6 +273,8 @@ if ('speechSynthesis' in window) {} else {
     alert('tu navegador no soportar')
 }
 
+// carga las voces que se tiene en el navegador
+
 function loadVoices() {
     var voices = speechSynthesi.getVoices();
 }
