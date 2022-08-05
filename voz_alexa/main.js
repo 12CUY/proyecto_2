@@ -1,11 +1,13 @@
+//la fucncion del botton
 function start() {
     if (annyang) {
-        annyang.setLanguage("es-CO")
-        annyang.start({ autoRestart: true, continuous: false });
-        console.log("Listening...")
-        annyang.addCommands(comandos);
+        annyang.setLanguage("es-CO") //asignacion del lenguaje
+        annyang.start({ autoRestart: true, continuous: false }); //INICIA LA HERRAMIENTA BOTON
+        console.log("Listening...") //LA HERRAMIENTA ME ESTA ESCUCHANDO
+        annyang.addCommands(comandos); //SE AGREGA LOS COMANDOS DE VOZ CADA VEZ QUE SE DIGA
         annyang.debug()
-        document.getElementById("btn").style.display = "none"
+        document.getElementById("btn").style.display = "none" //PRESIONO EL BOTON Y SE OCULTA
+
     }
 }
 
@@ -147,12 +149,12 @@ const comandos = {
 
     "pagina anterior *busqueda": busqueda => {
         voz("ok, la pagina anterior es " + busqueda);
-        window.open("https://www.mozilla.org/" + busqueda)
+        window.open("https://www.mozilla.org/" + busqueda) //abre ventana de busqueda
     },
 
     "busca *busqueda": busqueda => {
         voz("ok, buscando " + busqueda + " para ti");
-        window.open("https://www.google.com/search?q=" + busqueda)
+        window.open("https://www.google.com/search?q=" + busqueda) //abre ventana de busqueda
     },
 
     "abre *busqueda": busqueda => {
@@ -166,27 +168,27 @@ const comandos = {
         window.open("https://www.youtube.com/watch?v=EbHxWU52ZH0" + busqueda)
     },
 
-// electronica
+    // electronica
     "buscar *busqueda": busqueda => {
         voz("ok, buscando " + busqueda + "para ti");
-        window.open("https://www.youtube.com/watch?v=ZAFFYm6r68E" + busqueda)
+        window.open("https://www.youtube.com/watch?v=ZAFFYm6r68E" + busqueda) //abre ventana de busqueda
     },
 
-    
+
     "tengo hambre *busqueda": busqueda => {
         voz("ok, buscando " + busqueda + "para ti");
-        window.open("https://www.mcdonalds.com.ec/" + busqueda)
+        window.open("https://www.mcdonalds.com.ec/" + busqueda) //abre ventana de busqueda
     },
 
     // vachata
     "reproduce *busqueda": busqueda => {
         voz("ok, reproduciendo " + busqueda + "para ti");
-        window.open("https://www.youtube.com/watch?v=DJUAXq-_y6M" + busqueda)
+        window.open("https://www.youtube.com/watch?v=DJUAXq-_y6M" + busqueda) //abre ventana de busqueda
     },
 
     "llama al *telefono": telefono => {
         voz("ok, con gusto llamando al" + telefono);
-        window.open("tel:" + telefono)
+        window.open("tel:" + telefono) //abre ventana de busqueda
     },
 
     "repite *frase": frase => {
@@ -199,7 +201,7 @@ const comandos = {
     // AMABILIDAD
 
     "gracias": () => {
-        voz("Para servirte señor");
+        voz("Para servirte señor"); // comunicacion con la voz
     },
 
     "ulala": () => {
@@ -220,7 +222,7 @@ const comandos = {
     // LLAMADA A LA ACCIÓN
 
     "Frost": () => {
-        voz("aquí estoy, señor");
+        voz("aquí estoy, señor"); // comunicacion con la voz 
     },
 
     "Hey": () => {
@@ -250,9 +252,14 @@ function voz(texto) {
     var textoAEscuchar = texto;
     var mensaje = new SpeechSynthesisUtterance();
     mensaje.text = textoAEscuchar;
-    mensaje.volume = 5;
-    mensaje.rate = 0.9;
-    mensaje.pitch = 1;
+    mensaje.volume = 2; //VOLUMEN DEL HABLA
+    mensaje.rate = 0.9; //LA VELOCIDAD QUE HABLA F
+    mensaje.pitch = 1.5; // EL IDIOMA COLOMBIA ESTA CAMBIAR A ESPAÑOL 
+
+    mensaj.voice = speechSyntehesis.getVoices().filter(function(voice) {
+        return voice.name == "Google español de Estados unidos";
+    })[0];
+
     // ¡Parla!
     document.getElementById("all").style.visibility = "visible";
     setTimeout(() => {
@@ -261,3 +268,19 @@ function voz(texto) {
     }, 4000);
     speechSynthesis.speak(mensaje);
 }
+
+if ('speechSynthesis' in window) {} else {
+    alert('tu navegador no soportar')
+}
+
+function loadVoices() {
+    var voices = speechSynthesi.getVoices();
+}
+// execute loadvoices 
+loadVoices();
+
+// chrome loads voices asynchronously.
+
+window.speechSynthesis.onvoiceschanged = function(e) {
+    loadVoices()
+};
