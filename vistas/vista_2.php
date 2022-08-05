@@ -43,8 +43,9 @@ include('../templates/menu.php');
                 programar escenas para que el inmueble se adapte a las necesidades. necesidades de cada persona.</p>
 
                 <br><br>
-
-
+                <section>
+                    <?php include('../tarjeta/card_desplazamineto.php');//tarjeta  ?>
+        </section>
         </article>
         <br><br><br>
         <div class="video">

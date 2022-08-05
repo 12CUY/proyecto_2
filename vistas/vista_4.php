@@ -43,6 +43,9 @@ include('../templates/menu.php');
                 través de la programación instalada, proteger la toda la casa.</p>
 
         </article>
+        <section>
+                    <?php include('../tarjeta/card_desplazamineto.php');//tarjeta  ?>
+        </section>
         <br><br><br>
         <div class="video">
             <video autoplay="" muted="" loop="" src="../videos/seguridad.mp4"></video>

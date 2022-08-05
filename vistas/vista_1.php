@@ -43,6 +43,9 @@
             <br><br>
 
         </article>
+        <section>
+                    <?php include('../tarjeta/card_desplazamineto.php');//tarjeta  ?>
+        </section>
         <br><br><br>
         <div class="video">
             <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
