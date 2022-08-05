@@ -57,7 +57,6 @@ include('../templates/menu.php');
         <span id="span4"></span>
         SIGUIENTE
         </a>
-    
         <br><br>
 </body>
 

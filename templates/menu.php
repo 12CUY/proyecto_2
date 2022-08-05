@@ -56,7 +56,7 @@
         </div>
       </a>
       <!--sistema completo falta la fecha de origen -->
-      <a href="../sistema prq/">
+      <a href="#">
         <div class="option">
           <i class="fas fa-sitemap" title="sistema"></i>
           <h4>sistema PQR</h4>
@@ -73,7 +73,7 @@
       <a href="../vistas/vista_1.php">
         <div class="option">
           <i class="far fa-id-badge" title="video"></i>
-          <h4>video de prueba</h4>
+          <h4>saltar directo casa</h4>
         </div>
       </a>
 

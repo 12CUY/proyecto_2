@@ -176,7 +176,7 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
                                     <!--base de datos mysql-->
 
                                             <!---->
-                        <form action="../proyecto_2/index_login.php" method="POST">
+                        <form action="../proyecto_2/index_login.php" method="post">
                         <h2>CREAR CUENTA</h2>
                         <input type="text" name="user_name" placeholder="Nombre del Usuario">
                         <input type="text" name="email" placeholder="Correo Electronico">

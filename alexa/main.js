@@ -1,7 +1,7 @@
 function start() {
     if (annyang) {
         annyang.setLanguage("es-CO")
-        annyang.start({ autoRestart: true, continuous: false });
+        annyang.start({ autoRestart: true, continuous: faltr });
         console.log("Listening...")
         annyang.addCommands(comandos);
         annyang.debug()
@@ -218,9 +218,9 @@ function voz(texto) {
     var textoAEscuchar = texto;
     var mensaje = new SpeechSynthesisUtterance();
     mensaje.text = textoAEscuchar;
-    mensaje.volume = 5;
-    mensaje.rate = 1.2;
-    mensaje.pitch = 2;
+    mensaje.volume = 3;
+    mensaje.rate = 0.9;
+    mensaje.pitch = 1;
     // ¡Parla!
     document.getElementById("all").style.visibility = "visible";
     setTimeout(() => {
