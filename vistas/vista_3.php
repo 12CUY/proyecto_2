@@ -49,7 +49,7 @@ include('../templates/menu.php');
 
 
         <div class="video">
-            <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
+            <video autoplay="" muted="" loop="" src="../videos/vista.mp4"></video>
             <h2>Visual</h2><!--cambiar al tamaño original y cambiar video-->
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br>

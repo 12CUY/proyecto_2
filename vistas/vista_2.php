@@ -48,7 +48,7 @@ include('../templates/menu.php');
         </article>
         <br><br><br>
         <div class="video">
-            <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
+            <video autoplay="" muted="" loop="" src="../videos/confort.mp4"></video>
             <h2 >Confort</h2> <!--cambiar al tamaño original y cambiar video-->
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br>
