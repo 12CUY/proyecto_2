@@ -34,7 +34,7 @@ include('../templates/menu.php');
 
     <main>
         <article>
-            <h1>Confort - informacion</h1>
+            <h1>Confort - información</h1>
             <hr>
             <br><br>
             <p>Cuando tu hogar se adapta a tus necesidades, mejora tu calidad de vida. La domótica juega un papel muy 
