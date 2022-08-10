@@ -63,10 +63,10 @@
         </div>
       </a>
 <!--huella-->
-      <a href="../alexa/index.php">
+      <a href="../frost/index..php">
         <div class="option">
           <i class="fa-solid fa-microphone-lines" title="alexa"></i>
-          <h4>Domotica || ALEXA </h4>
+          <h4>Domotica || Frost </h4>
         </div>
       </a>
       <!---->

@@ -1,18 +1,18 @@
 function start() {
     if (annyang) {
         annyang.setLanguage("es-CO")
-        annyang.start({ autoRestart: true, continuous: faltr });
+        annyang.start({ autoRestart: true, continuous: false }); 
         console.log("Listening...")
         annyang.addCommands(comandos);
         annyang.debug()
-        document.getElementById("btn").style.display = "none"
-    }
+        document.getElementById("btn").style.display = "none"   
+}
 }
 
 let bandera = false;
-annyang.addCallback('soundstart', function() {
-    if (!bandera) {
-        document.getElementById("all2").style.display = "block"
+annyang.addCallback('soundstart', function () {
+    if (!bandera){
+        document.getElementById("all2").style.display="block"
         setTimeout(() => {
             voz('Bienvenido de nuevo, señor')
             bandera = true;
@@ -21,7 +21,7 @@ annyang.addCallback('soundstart', function() {
     console.log("sound detected")
 });
 
-annyang.addCallback('result', function() {
+annyang.addCallback('result', function () {
     console.log('sound stopped');
 });
 
@@ -109,13 +109,13 @@ const comandos = {
     "qué fecha es hoy": () => {
         var date = new Date;
         var mes = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
-        voz("hoy es " + date.getDate() + " de " + mes[date.getMonth()] + "del" + date.getFullYear());
+        voz("hoy es " + date.getDate() + " de "+ mes[date.getMonth()] + "del" + date.getFullYear());
     },
 
     "qué día es hoy": () => {
         var date = new Date;
         var dia = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
-        voz("hoy es " + dia[date.getDay() - 1]);
+        voz("hoy es "+ dia[date.getDay()-1]);
     },
 
     // ORDENES
@@ -128,8 +128,7 @@ const comandos = {
             "Me da un café con leche corto, Se me ha roto la máquina, cambio",
             "¡Camarero! Este filete tiene muchos nervios, Normal, es la primera vez que se lo comen",
             "Hola, ¿está Agustín?, No, estoy incomodín",
-            "¿Cuál es la fruta más divertida?, la naranja ja ja"
-        ];
+            "¿Cuál es la fruta más divertida?, la naranja ja ja"];
 
         var ran = Math.floor(Math.random() * chistes.length);
         voz(chistes[ran])
@@ -146,10 +145,10 @@ const comandos = {
     },
 
     "busca *busqueda": busqueda => {
-        voz("ok, buscando " + busqueda + " para ti");
+        voz("ok, buscando " + busqueda +" para ti");
         window.open("https://www.google.com/search?q=" + busqueda)
     },
-
+    
     "quiero escuchar *busqueda": busqueda => {
         voz("ok, buscando " + busqueda + "para ti");
         window.open("https://www.youtube.com/results?search_query=" + busqueda)
@@ -163,7 +162,7 @@ const comandos = {
     "di *frase": frase => {
         voz(frase);
     },
-    "escribe *dicto": dicto => {
+    "escribe *dicto": dicto =>{
         document.getElementById("text").innerHTML = dicto;
     },
 
@@ -182,11 +181,11 @@ const comandos = {
     },
 
     "Te presento a *nombre": nombre => {
-        voz("Hola" + nombre + ", mi nombre es Frost, es un placer conocerte");
+        voz("Hola" + nombre +", mi nombre es Frost, es un placer conocerte");
     },
 
     // LLAMADA A LA ACCIÓN
-
+    
     "Frost": () => {
         voz("aquí estoy, señor");
     },
@@ -218,14 +217,14 @@ function voz(texto) {
     var textoAEscuchar = texto;
     var mensaje = new SpeechSynthesisUtterance();
     mensaje.text = textoAEscuchar;
-    mensaje.volume = 3;
+    mensaje.volume = 1;
     mensaje.rate = 0.9;
     mensaje.pitch = 1;
     // ¡Parla!
     document.getElementById("all").style.visibility = "visible";
     setTimeout(() => {
-        document.getElementById("all").style.visibility = "hidden";
-        document.getElementById("all2").style.visibility = "visible";
+        document.getElementById("all").style.visibility = "hidden";  
+        document.getElementById("all2").style.visibility = "visible";      
     }, 4000);
     speechSynthesis.speak(mensaje);
 }

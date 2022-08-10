@@ -1,5 +1,5 @@
   body {
-      background: #191919;
+      background: #707070;
   }
   
   .item {
@@ -16,7 +16,7 @@
   
   #btn {
       padding: 10px;
-      background: linear-gradient(#1f77bd, #1fe5bd);
+      background: linear-gradient(#028cfd, #0cd7f1);
       border: 0px solid;
       border-radius: 2px;
       color: white;
@@ -47,7 +47,7 @@
       width: 2px;
       animation: music 1s backwards infinite;
       animation-delay: 0.4s;
-      background: linear-gradient(#1f77bd, #e51f1f);
+      background: linear-gradient(#1f77bd, #1fe5bd);
   }
   
   .item-4 {
