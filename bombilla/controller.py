@@ -16,8 +16,8 @@ def powerOFF():
     
 while True:
     print("\Opciones: ")
-    print("encender bombilla: 1")
-    print("apagarbombilla: 2")
+    print("Encender bombilla: 1")
+    print("Apagar bombilla: 2")
     option = str(input("que quieres hacer"))
     
     if option == "1":
