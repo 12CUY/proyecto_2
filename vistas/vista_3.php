@@ -43,9 +43,7 @@ include('../templates/menu.php');
             </p>
             <br><br>
         </article>
-        <section>
-                    <?php include('../tarjeta/card_desplazamineto.php');//tarjeta  ?>
-        </section>
+
         <br><br><br>        
 
 

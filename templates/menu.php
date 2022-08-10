@@ -23,7 +23,7 @@
 
     <div class="name__page">
       <i class="fab fa-asymmetrik"></i>
-      <h4>JUMAWA</h4>
+      <h4>JUMAWI</h4>
     </div>
 
     <div class="options__menu">
