@@ -18,13 +18,13 @@
 			  "autoWidth": false,
 			});
 			$('#example2').DataTable({
-			  "paging": true,
+			  "paging": false,
 			  "lengthChange": false,
-			  "searching": true,
+			  "searching": false,
 			  "ordering": true,
 			  "info": true,
 			  "autoWidth": false,
-			  "responsive": true,
+			  "responsive": false,
 			});
 		  });
 		</script>

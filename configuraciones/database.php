@@ -3,7 +3,7 @@
 $server = 'localhost';
 $username = 'root';
 $password = '';
-$database = 'domotica_2';
+$database = 'domotica_4';
 // login y registre valid
 try {
   $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);

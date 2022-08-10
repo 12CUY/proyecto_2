@@ -56,7 +56,7 @@
         </div>
       </a>
       <!--sistema completo falta la fecha de origen -->
-      <a href="#">
+      <a href="../sistema_barras">
         <div class="option">
           <i class="fas fa-sitemap" title="sistema"></i>
           <h4>sistema PQR</h4>
