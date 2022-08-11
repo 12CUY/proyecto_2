@@ -37,9 +37,9 @@ include('../templates/menu.php');
             <br><br>
             <p></p>
 
-            <p> Esta aplicacion tiene como finalidad ayudar al usuario a simplicar las cosas cotidianas de la vida asi como la 
+            <p> Esta aplicación tiene como finalidad ayudar al usuario a simplicar las cosas cotidianas de la vida asi como la 
                 seguridad y bienestar de los suyos, con una interfaz de facil uso aportando sistemas de seguridad y control desde cualquier dispositivo movil u ordenador
-                dentro y fuera del hogar 
+                dentro y fuera del hogar.
             </p>
             <br><br>
         </article>

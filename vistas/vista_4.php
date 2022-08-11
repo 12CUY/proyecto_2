@@ -32,7 +32,7 @@ include('../templates/menu.php');
 
     <main>
         <article>
-            <h1>Seguridad - informacion</h1>
+            <h1>Seguridad - información</h1>
             <hr>
             <br><br>
             <p>Consiste en una red de seguridad encargada de proteger a las personas y bienes, esta aplicación se basa

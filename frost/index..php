@@ -1,7 +1,7 @@
 <?php
     include('../templates/menu.php');
-    //menu union 
-    ?>
+    //menu union  
+?> 
 <!DOCTYPE html>
 <html lang="es">
 
