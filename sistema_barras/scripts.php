@@ -18,7 +18,7 @@
 			  "autoWidth": false,
 			});
 			$('#example2').DataTable({
-			  "paging": false,
+			  "paging": true,
 			  "lengthChange": false,
 			  "searching": false,
 			  "ordering": true,
@@ -66,7 +66,7 @@ var x=my_canvas.width/2;
 var y=my_canvas.height/2;
 speed=1000;
 
-arc_angle=10;// ángulo del extremo opuesto del segundo niddle
+arc_angle=10;// angle of oppisite end of second niddle
 
 ////////////
 my_function=function my_function(){
@@ -86,7 +86,7 @@ gctx.stroke(); ///Outer circle
 ////////////////////
 gctx.lineWidth=1;
 
-//////////// Para mostrar el número que indica Horas///////////
+//////////// To show number indicating Hours ///////////
 var h=2;
 var x_gap=-5;
 var y_gap=5;
@@ -104,7 +104,7 @@ var x1_text=x+ 1*r*Math.cos(j_radian);
 
 //h=h+5;
 if(h<12){
-h=h+1; // para mostrar la hora 
+h=h+1; // to show hour 
 }else{
 h=1;
 }	
@@ -128,7 +128,7 @@ gctx.stroke();
 
 /////////////////////
 gctx.beginPath()
-gctx.strokeStyle= '#46d2f5'; // bpedir color de la segunda aguja 
+gctx.strokeStyle= '#46d2f5'; // border color of the second needle 
 var startAngle=(1/180) * (360-ang_second); // In degree 
 var a_end_ang=(1/180) * (360-(ang_second + 180 -arc_angle));
 var a_start_ang=(1/180) *(360-(ang_second + 180 + arc_angle));
@@ -136,15 +136,15 @@ var a_start_ang=(1/180) *(360-(ang_second + 180 + arc_angle));
 var y1=y+ r*Math.sin(startAngle*Math.PI);
 var x1=x+ r*Math.cos(startAngle*Math.PI);
 
-gctx.moveTo(x1,y1); // Coordenada de la punta de la aguja
+gctx.moveTo(x1,y1); // Coordinate of tip of the needle
 gctx.arc(x,y,0.3*r,a_start_ang*Math.PI,a_end_ang*Math.PI);
-gctx.lineTo(x1,y1); // Segunda trayectoria completa de la aguja
-gctx.fillStyle = '#46d2f5'; // color de relleno de la segunda aguja
+gctx.lineTo(x1,y1); // Full second needle path
+gctx.fillStyle = '#46d2f5'; // fill colour of the second needle
 gctx.fill();
-gctx.stroke(); // dibujar la segunda aguja
+gctx.stroke(); // draw the second needle 
 //////////////////////////////////
 
-///////////Aguja de minutos//////////
+///////////Minute Needle//////////
 gctx.beginPath()
 gctx.strokeStyle= '#f5d200'; // border color of the minute needle 
 var startAngle=(1/180) * (360-ang_minute); // In degree 
@@ -154,15 +154,15 @@ var a_start_ang=(1/180) *(360-(ang_minute + 180 + arc_angle));
 var y1=y+ 0.9*r*Math.sin(startAngle*Math.PI);
 var x1=x+ 0.9*r*Math.cos(startAngle*Math.PI);
 
-gctx.moveTo(x1,y1); // Coordenada de la punta de la aguja
+gctx.moveTo(x1,y1); // Coordinate of tip of the needle
 gctx.arc(x,y,0.3*r,a_start_ang*Math.PI,a_end_ang*Math.PI);
 gctx.lineTo(x1,y1); // Full minute needle path
 gctx.fillStyle = '#f5d200'; // fill colour of the minute needle
 gctx.fill();
-gctx.stroke(); // dibujar la aguja de los minutos
+gctx.stroke(); // draw the minute needle 
 //////////////////////////////////
 
-///////////hora Aguja//////////
+///////////hour Needle//////////
 gctx.beginPath()
 gctx.strokeStyle= '#f52300'; // border color of the hour needle 
 var startAngle=(1/180) * (360-ang_hour); // In degree 
@@ -180,7 +180,7 @@ gctx.fill();
 gctx.stroke(); // draw the hour needle 
 //////////////////////////////////
 
-/// pequeño círculo en el centro del reloj 
+/// small Circle at center of the clock 
 gctx.beginPath()
 gctx.strokeStyle= '#000000';
 gctx.arc(x,y,3,0,2*Math.PI); 

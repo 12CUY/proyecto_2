@@ -3,7 +3,7 @@
     <head>
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <title>Código de barras | Asistencia</title>
+	  <title>Código De Barras | Asistencia</title>
 	  <!-- Tell the browser to be responsive to screen width -->
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,14 +13,14 @@
 
 		<link rel="stylesheet" href="css/buttons.dataTables.min.css">
     </head>
-    <body style="background:#eee">
-        <nav class="navbar" style="background:#fff">
+    <body style="background:#493f3f">
+        <nav class="navbar" style="background:#8b2a2a">
 		  <div class="container-fluid">
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="#">ASISTENCIADE CÓDIGO DE BARRAS </a>
+			  <a class="navbar-brand" href="../vistas/vista_1.php">JUMAWI </a>
 			</div>
 			<ul class="nav navbar-nav">
-			  <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> CASA </a></li>
+			  <li class="active"><a href="../vistas/vista_1.php"><span class="glyphicon glyphicon-home"></span> CASA </a></li>
 				<ul class="dropdown-menu">
 				  <li><a href="attendance.php"><span class="glyphicon glyphicon-calendar"></span> VERIFICAR ASISTENCIA</a></li>
 
@@ -60,7 +60,7 @@
                 </div>
 				
                 <div class="col-md-12">
-				<div style="border-radius: 5px;padding:10px;background:#fff;">
+				<div style="border-radius: 10px;padding:10px;background:#fff;">
                <p>Resumen de asistencia</p>
 			   <table id="example1" class="table table-bordered">
                     <thead>

@@ -50,7 +50,7 @@ include('../templates/menu.php');
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br>
-        <a href="../sistema prq/" class="btn-neon">
+        <a href="../sistema_barras/" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
         <span id="span3"></span>

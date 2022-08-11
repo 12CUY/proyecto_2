@@ -36,7 +36,7 @@
 				<br>
 				
 				<div class="col-md-6">
-				<h3 style="color:#fff">GESTIÓN DE ASISTENCIA DE EMPLEADOS V1.0</h3>
+				<h3 style="color:#fff">Gestion De Asistencia dentro de la residencia</h3>
 				</div>
                 <div class="col-md-6">
 				<nav class="navbar navbar-default">
@@ -51,7 +51,7 @@
 				</nav>
 				<form action="TimeInOut.php" method="post" class="form-horizontal" style="border-radius: 5px;padding:10px;background:#fff;" id="divvideo">
                      <i class="glyphicon glyphicon-barcode"></i> <label>ESCANEAR CÓDIGO DE BARRAS AQUÍ</label><p></p>
-                    <input type="text" name="studentID" id="text" placeholder="scan barcode" class="form-control" autofocus>
+                    <input type="text" name="studentID" id="text" placeholder="ingrese su numero de barras" class="form-control" autofocus>
 					
                 </form>
 				 <div class="row">
