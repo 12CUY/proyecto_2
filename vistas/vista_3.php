@@ -53,7 +53,7 @@ include('../templates/menu.php');
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br>
-        <a href="../vistas/vista_4.php" class="btn-neon">
+        <a href="../vistas/foco.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
         <span id="span3"></span>

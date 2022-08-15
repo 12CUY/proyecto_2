@@ -48,6 +48,15 @@
           <h4>Visual</h4>
         </div>
       </a>
+
+      <!---->
+      <a href="../vistas/foco.php">
+        <div class="option">
+          <i class="fa-regular fa-lightbulb" title="foco"></i>
+          <h4>foco</h4>
+        </div>
+      </a>
+      
 <!--seguridad-->
       <a href="vista_4.php">
         <div class="option">
@@ -69,6 +78,8 @@
           <h4>Domotica || Frost </h4>
         </div>
       </a>
+
+
       <!---->
       <a href="../vistas/vista_1.php">
         <div class="option">
