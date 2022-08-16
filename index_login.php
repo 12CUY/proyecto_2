@@ -47,7 +47,7 @@ if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['user
       $_SESSION['user_id'] = $results['id'];
       header('Location: ../proyecto_2/index_login.php');
     } else {
-      $message = 'credenciales incorrectas';
+      $message = '+';
     }
   }
 
