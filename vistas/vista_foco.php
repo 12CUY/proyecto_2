@@ -1,4 +1,8 @@
+<?php
+include('../templates/menu.php');
+//menu union 
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link rel="stylesheet" href="../estilos_vista_css/imagen_hover.css">
     <link rel="stylesheet" href="../estilos_vista_css/responsib_m.css">
-
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 <body>
@@ -29,32 +32,36 @@
 
 
     <main>
-        <article>
-            <h1>Confort - información</h1>
+    <article>
+            <h1>Foco - información</h1>
             <hr>
             <br><br>
-            <p>Cuando tu hogar se adapta a tus necesidades, mejora tu calidad de vida. La domótica juega un papel muy 
-                importante en este punto ya que tiene el control de todo el inmueble, dicho control se utiliza fundamentalmente 
-                para, por un lado, hacer que las tareas repetitivas y rutinarias se realicen de forma automática, y por otro, 
-                programar escenas para que el inmueble se adapte a las necesidades. necesidades de cada persona.</p>
-
-                <br><br>
-
-        </article>
-        <br><br><br>
-        <div class="video">
-            <video autoplay="" muted="" loop="" src="../videos/confort.mp4"></video>
-            <h2 >Confort</h2> <!--cambiar al tamaño original y cambiar video-->
-        </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br>
-        <a href="../vistas/vista_3.php" class="btn-neon">
+            <p>Una buena iluminación es mucho más que simplemente contar con luz muy potente. 
+                De hecho, una buena iluminación es aquella que responde a las necesidades concretas 
+                de cada momento. Es decir, a diferencia de la luz unimodal, se trata de una iluminación 
+                capaz de adaptarse a las distintas circunstancias y demandas de cada momento. 
+                Entonces es cuando hablamos de iluminación inteligente.</p> <!--letra-->
+                <a href="../vistas/foco_on_off.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
         <span id="span3"></span>
         <span id="span4"></span>
-        SIGUIENTE
-         </a>
+        iniciar
+        </a>
+        <br><br><br>
+        <div class="video">
+            <video autoplay="" muted="" loop="" src="../videos/confort.mp4"></video>
+            <h2 >foco</h2> <!--cambiar al tamaño original y cambiar video-->
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br>
+        <a href="../vistas/vista_4.php" class="btn-neon">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        Siguiente
+        </a>
     
         <br><br>
         

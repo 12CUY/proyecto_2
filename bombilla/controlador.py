@@ -15,9 +15,9 @@ def powerOFF():
     controller.close()
     
 while True:
-    print("\Opciones: ")
-    print("Encender bombilla: 1")
-    print("Apagar bombilla: 2")
+    print("\nOpciones: ")
+    print("encender bombilla: 1")
+    print("apagarbombilla: 2")
     option = str(input("que quieres hacer"))
     
     if option == "1":

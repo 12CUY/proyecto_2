@@ -50,13 +50,13 @@
       </a>
 
       <!---->
-      <a href="../vistas/foco.php">
+      <a href="../vistas/vista_foco.php">
         <div class="option">
           <i class="fa-regular fa-lightbulb" title="foco"></i>
           <h4>foco</h4>
         </div>
       </a>
-      
+
 <!--seguridad-->
       <a href="vista_4.php">
         <div class="option">
