@@ -21,8 +21,7 @@
         <div class="container-details">
             <div class="details">
                 <h1>DOMOTICA</h1>
-                <p> Sistema capaz de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de 
-                    gestión energética, seguridad, bienestar y comunicación.</p>
+                <p> Sistema capaces de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de gestión energética, seguridad, bienestar y comunicación.</p>
 
             </div>
         </div>
@@ -32,6 +31,7 @@
     <article>
             <h1>Foco - información</h1>
             <hr>
+            <br><br>
             <p>Si quiere encender la bombilla ponga 1
             </p> <!--letra-->
             <p>Si quiere apagar la bombilla ponga 2
@@ -44,13 +44,13 @@
         iniciar
         </a>
 
-        <br>
+        <br><br><br>
         <div class="video">
-            <video autoplay="" muted="" loop="" src="../videos/confort.mp4"></video>
+            <video autoplay="" muted="" loop="" src="../videos/foco.mp4"></video>
             <h2 >ON/OFF</h2> <!--cambiar al tamaño original y cambiar video-->
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br>
+        <br><br><br>
         <a href="../vistas/vista_foco.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
@@ -58,7 +58,6 @@
         <span id="span4"></span>
         Salir
         </a>
-        <br><br><br><br><br><br>
         <py-script src="../bombilla/discovery.py"></py-script>
   <py-script src="../bombilla/controlador.py"></py-script>
         <br><br>
