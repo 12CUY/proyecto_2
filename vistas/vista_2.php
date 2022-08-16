@@ -23,8 +23,8 @@
         <div class="container-details">
             <div class="details">
                 <h1>DOMOTICA</h1>
-                <p> Sistema capaces de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de gestión energética, seguridad, bienestar y comunicación.</p>
-                <button>Ver mas detalles</button>
+                <p> Sistema capaz de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de 
+                    gestión energética, seguridad, bienestar y comunicación.</p>
             </div>
         </div>
     </div>
@@ -35,16 +35,14 @@
         <article>
             <h1>Confort - información</h1>
             <hr>
-            <br><br>
+            <br>
             <p>Cuando tu hogar se adapta a tus necesidades, mejora tu calidad de vida. La domótica juega un papel muy 
-                importante en este punto ya que tiene el control de todo el inmueble, dicho control se utiliza fundamentalmente 
+                importante en este punto, ya que tiene el control de todo el inmueble, dicho control se utiliza fundamentalmente 
                 para, por un lado, hacer que las tareas repetitivas y rutinarias se realicen de forma automática, y por otro, 
-                programar escenas para que el inmueble se adapte a las necesidades. necesidades de cada persona.</p>
-
-                <br><br>
+                programar escenas para que el inmueble se adapte a las necesidades. Necesidades de cada persona.</p>
 
         </article>
-        <br><br><br>
+        <br><br>
         <div class="video">
             <video autoplay="" muted="" loop="" src="../videos/confort.mp4"></video>
             <h2 >Confort</h2> <!--cambiar al tamaño original y cambiar video-->

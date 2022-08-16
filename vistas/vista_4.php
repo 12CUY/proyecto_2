@@ -22,8 +22,8 @@ include('../templates/menu.php');
             <div class="container-details">
                 <div class="details">
                     <h1>DOMOTICA</h1>
-                    <p> Sistema capaces de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de gestión energética, seguridad, bienestar y comunicación.</p>
-                    <button>Ver mas detalles</button>
+                    <p> Sistema capaz de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de 
+                    gestión energética, seguridad, bienestar y comunicación.</p>
                 </div>
             </div>
         </div>

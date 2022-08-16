@@ -20,9 +20,8 @@
         <div class="container-details">
             <div class="details">
                 <h1>DOMOTICA</h1>
-                <p> Sistema capaces de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de 
+                <p> Sistema capaz de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de 
                     gestión energética, seguridad, bienestar y comunicación.</p>
-                <button>Ver mas detalles</button>
             </div>
         </div>
     </div>
@@ -33,16 +32,14 @@
         <article>
             <h1>Casa - información</h1>
             <hr>
-            <br><br>
             <p>El sistema nos permite gestionar dispositivos para el ahorro energético y eficiencia energética, 
-                la domótica juega un papel muy importante ya que se cuenta con la inteligencia suficiente para llevar 
+                la domótica juega un papel muy importante, ya que se cuenta con la inteligencia suficiente para llevar 
                 a muchas acciones, una de ellas es la gestión de la energía lo cual nos ayuda a que nuestro consumo de 
                 energía pueda ser aprovechada al máximo evitando el desperdicio de la misma.</p> <!--letra-->
             
-            <br><br>
 
         </article>
-        <br><br><br>
+        <br><br>
         <div class="video">
             <video autoplay="" muted="" loop="" src="../videos/casa.mp4"></video>
             <h2 >casa</h2><!--cambiar al tamaño original y cambiar video-->

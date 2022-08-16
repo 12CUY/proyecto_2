@@ -22,8 +22,8 @@ include('../templates/menu.php');
             <div class="container-details">
                 <div class="details">
                     <h1>DOMOTICA</h1>
-                    <p> Sistema capaces de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de gestión energética, seguridad, bienestar y comunicación.</p>
-                    <button>Ver mas detalles</button>
+                    <p> Sistema capaz de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de 
+                    gestión energética, seguridad, bienestar y comunicación.</p>
                 </div>
             </div>
         </div>
@@ -37,14 +37,13 @@ include('../templates/menu.php');
             <br><br>
             <p></p>
 
-            <p> Esta aplicación tiene como finalidad ayudar al usuario a simplicar las cosas cotidianas de la vida asi como la 
-                seguridad y bienestar de los suyos, con una interfaz de facil uso aportando sistemas de seguridad y control desde cualquier dispositivo movil u ordenador
+            <p> Esta aplicación tiene como finalidad ayudar al usuario al simplificar las cosas cotidianas de la vida así como la 
+                seguridad y bienestar de los suyos, con una interfaz de fácil uso aportando sistemas de seguridad y control desde cualquier dispositivo móvil u ordenador
                 dentro y fuera del hogar.
             </p>
-            <br><br>
         </article>
 
-        <br><br><br>        
+        <br><br>      
 
 
         <div class="video">

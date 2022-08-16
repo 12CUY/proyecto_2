@@ -23,8 +23,8 @@ include('../templates/menu.php');
         <div class="container-details">
             <div class="details">
                 <h1>DOMOTICA</h1>
-                <p> Sistema capaces de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de gestión energética, seguridad, bienestar y comunicación.</p>
-                <button>Ver mas detalles</button>
+                <p> Sistema capaz de automatizar una vivienda o edificación de cualquier tipo, aportando servicios de 
+                    gestión energética, seguridad, bienestar y comunicación.</p>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@ include('../templates/menu.php');
     <article>
             <h1>Foco - información</h1>
             <hr>
-            <br><br>
+            <br>
             <p>Una buena iluminación es mucho más que simplemente contar con luz muy potente. 
                 De hecho, una buena iluminación es aquella que responde a las necesidades concretas 
                 de cada momento. Es decir, a diferencia de la luz unimodal, se trata de una iluminación 
@@ -48,7 +48,7 @@ include('../templates/menu.php');
         <span id="span4"></span>
         iniciar
         </a>
-        <br><br><br>
+        <br>
         <div class="video">
             <video autoplay="" muted="" loop="" src="../videos/confort.mp4"></video>
             <h2 >foco</h2> <!--cambiar al tamaño original y cambiar video-->
